@@ -1,2 +1,3 @@
 #ignore intellij metadata information
 .idea/
+*.map
