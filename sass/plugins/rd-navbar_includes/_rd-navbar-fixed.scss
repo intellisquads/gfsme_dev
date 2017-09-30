@@ -16,6 +16,7 @@
     white-space: nowrap;
     text-overflow: ellipsis;
 
+
     @include display-flex;
     @include flex-direction(row);
     @include flex-wrap(nowrap);
@@ -28,6 +29,11 @@
 
     .brand-slogan {
       display: none;
+    }
+    //Small logo for mobile devices
+    img {
+      width: 80px;
+      height: 39px;
     }
   }
 

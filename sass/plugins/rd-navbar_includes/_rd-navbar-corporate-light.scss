@@ -251,7 +251,8 @@ $rd-search-results-width: 800px;
 
     // RD Navbar Group
     .rd-navbar-group {
-      padding: 35px 15px;
+      //padding: 35px 15px;
+      padding: 10px 15px; //Reduced Padding for Header Menu for big logo
       @extend %rd-navbar-transition;
       @include justify-content(space-between);
     }
