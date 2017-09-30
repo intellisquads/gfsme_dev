@@ -101,7 +101,7 @@
   img {
     width: auto;
     transition: .44s all ease;
-    opacity: .5;
+    opacity: 1; //0.5 - changed to partners visible properly
   }
 
   &:hover {
