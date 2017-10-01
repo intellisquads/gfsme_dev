@@ -56,7 +56,7 @@
 // Create IE 9 and below degradation styles
 html.lt-ie-10 * + .range,
 * + .range {
-  margin-top: $range-ws;
+  //margin-top: $range-ws; //comented because of too much gap between partners
 }
 
 html.lt-ie-10 * + [class*='cell-'],

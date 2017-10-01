@@ -20,10 +20,528 @@ block title
 block page
   //- Page Header
   include ../sections/_section-header-default
-  include ../sections/_section-slider
+  //- include ../sections/_section-slider
+
+  //- Insurnace items in Circle
+  section.section-60.section-sm-90.bg-athens-gray.bg-image.bg-image-sm-hide(style='background-image: url(images/home-bg-image-1.jpg);')
+    .shell
+      .range.range-sm-right
+        .cell-sm-8.cell-md-7.cell-lg-7
+            #tabs-3.tabs-custom.tabs-horizontal.tabs-line.tabs-custom-horizontal
+              ul.nav.nav-tabs
+                li.active: a(href='#tabs-3-1' data-toggle='tab') LIFE INSURANCE
+                li: a(href='#tabs-3-2' data-toggle='tab') TRAVEL INSURANCE
+                li: a(href='#tabs-3-3' data-toggle='tab') HOUSE INSURANCE
+                li: a(href='#tabs-3-4' data-toggle='tab') CAR INSURANCE
+
+              //- Tab panes
+              .tab-content.text-gray-base
+                div#tabs-3-1.tab-pane.fade.in.active
+                  h2
+                    span.sub-head-small Life Insurance Quote
+                  .rd-range-wrap
+                    span.rd-range-label Level of protection:
+                    .rd-range-input-value-3
+                    .rd-range(data-min='1', data-max='1000', data-start='[150]',
+                              data-step='1', data-min-diff='10',
+                              data-input='.rd-range-input-value-3')
+                  h6.text-spacing-0.font-default.offset-top-40 Personal information:
+                  form.range.range-xs-center.range-sm-left.inset-lg-right-50.offset-top-20.rd-mailform(data-form-output="form-output-global", data-form-type='contact', method='post', action='bat/rd-mailform.php')
+                    .cell-sm-6
+                      .form-group.form-group-outside
+                        //Select 2
+                        select#index-business.form-control.select-filter(data-minimum-results-for-search="Infinity")
+                          option(value="1") Do you smoke?
+                          option(value="2") Yes
+                          option(value="3") No
+                        label.form-label.form-label-outside.veil(for="index-business") Do you smoke?
+                    .cell-sm-6.offset-top-20.offset-sm-top-0
+                      .form-group.form-group-outside
+                        //Select 2
+                        select#index-residence.form-control.select-filter(data-minimum-results-for-search="Infinity")
+                          option(value="1") Your age
+                          option(value="2") 18 - 20
+                          option(value="3") 21 - 25
+                          option(value="3") 26 - 36
+                          option(value="3") 37 - 48
+                          option(value="3") 49 - 55
+                        label.form-label.form-label-outside.veil(for="index-residence") Your age
+                    .range.offset-top-40
+                      .cell-sm-12
+                        h6.text-spacing-0.font-default Contact details:
+                      .cell-sm-6.offset-top-20
+                        .form-group.form-group-outside
+                          input#contact-name.form-control.bg-whisper-lighten.border-radius-0(type="text" name="name" data-constraints="@Required")
+                          label.form-label(for="contact-name") Name
+                      .cell-sm-6.offset-top-20
+                        .form-group.form-group-outside
+                          input#contact-phone.form-control.bg-whisper-lighten.border-radius-0(type="text" name="phone" data-constraints="@Required @Numeric")
+                          label.form-label(for="contact-phone") Phone
+                      .cell-sm-6.offset-top-20.offset-sm-top-30
+                        .form-group.form-group-outside
+                          input#contact-email.form-control.bg-whisper-lighten.border-radius-0(type="text" name="email" data-constraints="@Email @Required")
+                          label.form-label(for="contact-email") E-mail
+                      .cell-sm-6.offset-top-20.offset-sm-top-30
+                        button.btn.btn-icon.btn-icon-right.btn-primary-contrast.btn-custom.btn-block(type="submit")
+                          span Get a Quote
+                          span.icon.icon-xs-smaller.fa-angle-right
 
 
-  section.section-50.section-lg-top-0.section-sm-bottom-75.section-md-bottom-100(style='position: relative; z-index: 1000;')
+                div#tabs-3-2.tab-pane.fade
+                  h2
+                    span.sub-head-small Travel Insurance Quote
+                  .rd-range-wrap
+                    span.rd-range-label Level of protection:
+                    .rd-range-input-value-3
+                    .rd-range(data-min='1', data-max='1000', data-start='[150]',
+                    data-step='1', data-min-diff='10',
+                    data-input='.rd-range-input-value-3')
+                  h6.text-spacing-0.font-default.offset-top-40 Travel information:
+                  form.range.range-xs-center.range-sm-left.inset-lg-right-50.offset-top-20.rd-mailform(data-form-output="form-output-global", data-form-type='contact', method='post', action='bat/rd-mailform.php')
+                    .cell-sm-6
+                      .form-group.form-group-outside
+                        //Select 2
+                        select#travel-distance.form-control.select-filter(data-minimum-results-for-search="Infinity")
+                          option(value="1") Destination
+                          option(value="2") 10km
+                          option(value="3") 100km
+                          option(value="3") 500km
+                          option(value="3") 1000km
+                        label.form-label.form-label-outside.veil(for="travel-distance") Destination
+                    .cell-sm-6.offset-top-20.offset-sm-top-0
+                      .form-group.form-group-outside
+                        //Select 2
+                        select#travel-time.form-control.select-filter(data-minimum-results-for-search="Infinity")
+                          option(value="1") How long
+                          option(value="2") 5 days
+                          option(value="3") 10 days
+                          option(value="3") 15 days
+                          option(value="3") 20 days
+                          option(value="3") 25 days
+                        label.form-label.form-label-outside.veil(for="travel-time") How long
+                    .range.offset-top-40
+
+                      .cell-sm-12
+                        h6.text-spacing-0.font-default Contact details:
+                      .cell-sm-6.offset-top-20
+                        .form-group.form-group-outside
+                          input#travel-contact-name.form-control.bg-whisper-lighten.border-radius-0(type="text" name="name" data-constraints="@Required")
+                          label.form-label(for="travel-contact-name") Name
+                      .cell-sm-6.offset-top-20
+                        .form-group.form-group-outside
+                          input#travel-contact-phone.form-control.bg-whisper-lighten.border-radius-0(type="text" name="phone" data-constraints="@Required @Numeric")
+                          label.form-label(for="travel-contact-phone") Phone
+                      .cell-sm-6.offset-top-20.offset-sm-top-30
+                        .form-group.form-group-outside
+                          input#travel-contact-email.form-control.bg-whisper-lighten.border-radius-0(type="text" name="email" data-constraints="@Email @Required ")
+                          label.form-label(for="travel-contact-email") E-mail
+                      .cell-sm-6.offset-top-20.offset-sm-top-30
+                        button.btn.btn-icon.btn-icon-right.btn-primary-contrast.btn-custom.btn-block(type="submit")
+                          span Get a Quote
+                          span.icon.icon-xs-smaller.fa-angle-right
+
+                div#tabs-3-3.tab-pane.fade
+                  h2
+                    span.sub-head-small House insurance Quote
+                  h6.text-spacing-0.font-default.offset-top-40 Your house:
+                  form.range.range-xs-center.range-sm-left.inset-lg-right-50.offset-top-20.rd-mailform(data-form-output="form-output-global", data-form-type='contact', method='post', action='bat/rd-mailform.php')
+                    .cell-sm-6
+                      .form-group.form-group-outside
+                        //Select 2
+                        select#house-property.form-control.select-filter(data-minimum-results-for-search="Infinity")
+                          option(value="1") What sort of property is it?
+                          option(value="2") Property
+                          option(value="3") Rent
+                        label.form-label.form-label-outside.veil(for="house-property") What sort of property is it?
+                    .cell-sm-6.offset-top-20.offset-sm-top-0
+                      .form-group.form-group-outside
+                        //Select 2
+                        select#house-type.form-control.select-filter(data-minimum-results-for-search="Infinity")
+                          option(value="1") What type of property is it?
+                          option(value="2") House
+                          option(value="3") Apartment
+                          option(value="3") Cottage
+                          option(value="3") Factory
+                          option(value="3") Stock
+                        label.form-label.form-label-outside.veil(for="house-type") What type of property is it?
+                    .cell-sm-6.offset-top-20.offset-sm-top-30
+                      .form-group.form-group-outside
+                        //Select 2
+                        select#house-built.form-control.select-filter(data-minimum-results-for-search="Infinity")
+                          option(value="1") Roughly when was it built?
+                          option(value="2") 1 year
+                          option(value="3") 3 year
+                          option(value="3") 5 year
+                          option(value="3") 10 year
+                          option(value="3") 20 year
+                        label.form-label.form-label-outside.veil(for="house-built") Roughly when was it built?
+                    .cell-sm-6.offset-top-20.offset-sm-top-30
+                      .form-group.form-group-outside
+                        input#house-post-code.form-control.bg-whisper-lighten.border-radius-0(type="text" name="name" data-constraints="@Required ")
+                        label.form-label(for="house-post-code") House Postcode
+                    .range.offset-top-40
+                      .cell-sm-12
+                        h6.text-spacing-0.font-default Contact details:
+                      .cell-sm-6.offset-top-20
+                        .form-group.form-group-outside
+                          input#house-contact-name.form-control.bg-whisper-lighten.border-radius-0(type="text" name="name" data-constraints="@Required")
+                          label.form-label(for="house-contact-name") Name
+                      .cell-sm-6.offset-top-20
+                        .form-group.form-group-outside
+                          input#house-contact-phone.form-control.bg-whisper-lighten.border-radius-0(type="text" name="phone" data-constraints="@Required @Numeric")
+                          label.form-label(for="house-contact-phone") Phone
+                      .cell-sm-6.offset-top-20.offset-sm-top-30
+                        .form-group.form-group-outside
+                          input#house-contact-email.form-control.bg-whisper-lighten.border-radius-0(type="text" name="email" data-constraints="@Email @Required ")
+                          label.form-label(for="house-contact-email") E-mail
+                      .cell-sm-6.offset-top-20.offset-sm-top-30
+                        button.btn.btn-icon.btn-icon-right.btn-primary-contrast.btn-custom.btn-block(type="submit")
+                          span Get a Quote
+                          span.icon.icon-xs-smaller.fa-angle-right
+                div#tabs-3-4.tab-pane.fade
+                  h2
+                    span.sub-head-small Car Insurance Quote
+                  h6.text-spacing-0.font-default.offset-top-40 Personal information:
+                  form.range.range-xs-center.range-sm-left.inset-lg-right-50.offset-top-20.rd-mailform(data-form-output="form-output-global", data-form-type='contact', method='post', action='bat/rd-mailform.php')
+                    .cell-sm-6
+                      .form-group.form-group-outside
+                        //Select 2
+                        select#car-property.form-control.select-filter(data-minimum-results-for-search="Infinity")
+                          option(value="1") Manufacturer car
+                          option(value="2") USA
+                          option(value="3") Europe
+                          option(value="3") Asia
+                          option(value="3") Africa
+                        label.form-label.form-label-outside.veil(for="car-property") Manufacturer car
+                    .cell-sm-6.offset-top-20.offset-sm-top-0
+                      .form-group.form-group-outside
+                        //Select 2
+                        select#car-type.form-control.select-filter(data-minimum-results-for-search="Infinity")
+                          option(value="1") Model car
+                          option(value="2") BMW
+                          option(value="3") Citroen
+                          option(value="3") Honda
+                          option(value="3") Ford
+                          option(value="3") FIAT
+                        label.form-label.form-label-outside.veil(for="car-type") Model car
+                    .cell-sm-6.offset-top-20.offset-sm-top-30
+                      .form-group.form-group-outside
+                        //Select 2
+                        select#car-built.form-control.select-filter(data-minimum-results-for-search="Infinity")
+                          option(value="1") Registration year
+                          option(value="2") 1900+
+                          option(value="3") 2000+
+                          option(value="3") 2010+
+                        label.form-label.form-label-outside.veil(for="car-built") Registration year
+                    .cell-sm-6.offset-top-20.offset-sm-top-30
+                      .form-group.form-group-outside
+                        //Select 2
+                        select#car-yers.form-control.select-filter(data-minimum-results-for-search="Infinity")
+                          option(value="1") Your age
+                          option(value="2") 18-22
+                          option(value="3") 23-28
+                          option(value="3") 29-36
+                          option(value="3") 37-48
+                          option(value="3") 49-56
+                          option(value="3") 57+
+                    .range.offset-top-40
+                      .cell-sm-12
+                        h6.text-spacing-0.font-default Contact details:
+                      .cell-sm-6.offset-top-20
+                        .form-group.form-group-outside
+                          input#car-contact-name.form-control.bg-whisper-lighten.border-radius-0(type="text" name="name" data-constraints="@Required")
+                          label.form-label(for="car-contact-name") Name
+                      .cell-sm-6.offset-top-20
+                        .form-group.form-group-outside
+                          input#car-contact-phone.form-control.bg-whisper-lighten.border-radius-0(type="text" name="phone" data-constraints="@Required @Numeric")
+                          label.form-label(for="car-contact-phone") Phone
+                      .cell-sm-6.offset-top-20.offset-sm-top-30
+                        .form-group.form-group-outside
+                          input#car-contact-email.form-control.bg-whisper-lighten.border-radius-0(type="text" name="email" data-constraints="@Email @Required ")
+                          label.form-label(for="car-contact-email") E-mail
+                      .cell-sm-6.offset-top-20.offset-sm-top-30
+                        button.btn.btn-icon.btn-icon-right.btn-primary-contrast.btn-custom.btn-block(type="submit")
+                          span Get a Quote
+                          span.icon.icon-xs-smaller.fa-angle-right
+
+                          section.section-50.section-sm-90.section-sm-bottom-100
+                            .shell.text-center
+                              h2
+                                span.sub-head-small Get insurance for almost anything you need
+                              .range.range-xs-center.offset-top-35
+                                .cell-xs-8.cell-sm-5.cell-lg-3
+                                  //- Post Boxed
+                                  .post-boxed.reveal-lg-inline-block
+                                    .post-boxed-img-wrap
+                                      a(href='blog-post.html')
+                                        img(src='images/home-1-268x182.jpg', alt='', width='268', height='182')
+                                    .post-boxed-caption
+                                      .post-boxed-title.text-bold
+                                        a(href='blog-post.html') A Look into Nonprofit Risk Management
+                                      .offset-top-5
+                                        //- List Inline
+                                        ul.list-inline.list-inline-dashed.text-uppercase.font-accent
+                                          li JUNE 14, 2016
+                                          li
+                                            span
+                                              | by
+                                              ="\t"
+                                              a.text-primary(href='#') ADMIN
+                                .cell-xs-8.cell-sm-5.cell-lg-3.offset-top-40.offset-sm-top-0
+                                  //- Post Boxed
+                                  .post-boxed.reveal-lg-inline-block
+                                    .post-boxed-img-wrap
+                                      a(href='blog-post.html')
+                                        img(src='images/home-2-268x182.jpg', alt='', width='268', height='182')
+                                    .post-boxed-caption
+                                      .post-boxed-title.text-bold
+                                        a(href='blog-post.html') Workers’ Compensation: Combinability of Insureds
+                                      .offset-top-5
+                                        //- List Inline
+                                        ul.list-inline.list-inline-dashed.text-uppercase.font-accent
+                                          li JUNE 20, 2016
+                                          li
+                                            span
+                                              | by
+                                              ="\t"
+                                              a.text-primary(href='#') ADMIN
+                                .cell-xs-8.cell-sm-5.cell-lg-3.offset-top-40.offset-lg-top-0
+                                  //- Post Boxed
+                                  .post-boxed.reveal-lg-inline-block
+                                    .post-boxed-img-wrap
+                                      a(href='blog-post.html')
+                                        img(src='images/home-3-268x182.jpg', alt='', width='268', height='182')
+                                    .post-boxed-caption
+                                      .post-boxed-title.text-bold
+                                        a(href='blog-post.html') What 25 Years in Insurance Has Taught Me!
+                                      .offset-top-5
+                                        //- List Inline
+                                        ul.list-inline.list-inline-dashed.text-uppercase.font-accent
+                                          li JUNE 23, 2016
+                                          li
+                                            span
+                                              | by
+                                              ="\t"
+                                              a.text-primary(href='#') ADMIN
+                                .cell-xs-8.cell-sm-5.cell-lg-3.offset-top-40.offset-lg-top-0
+                                  //- Post Boxed
+                                  .post-boxed.reveal-lg-inline-block
+                                    .post-boxed-img-wrap
+                                      a(href='blog-post.html')
+                                        img(src='images/home-4-268x182.jpg', alt='', width='268', height='182')
+                                    .post-boxed-caption
+                                      .post-boxed-title.text-bold
+                                        a(href='blog-post.html') How to Properly Extend Insured Status
+                                      .offset-top-5
+                                        //- List Inline
+                                        ul.list-inline.list-inline-dashed.text-uppercase.font-accent
+                                          li JUNE 12, 2016
+                                          li
+                                            span
+                                              | by
+                                              ="\t"
+                                              a.text-primary( href='#') ADMIN
+
+  //- Get Insurance Almost anyting you need
+  section.section-50.section-sm-90.section-sm-bottom-100
+    .shell.text-center
+      h2
+        span.sub-head-small Get insurance for almost anything you need
+      .range.range-xs-center.offset-top-35
+        .cell-xs-8.cell-sm-5.cell-lg-2-4
+          //- Post Boxed
+          .ins-post-boxed.reveal-lg-inline-block
+            .post-boxed-img-wrap
+              a(href='blog-post.html')
+                img(src='images/home-1-268x182.jpg', alt='', width='228', height='182')
+            .ins-post-boxed-caption
+              .ins-post-boxed-title.text-bold Motor Fleet
+              .ins-post-boxed-content By comparing plans with us you can save a large amount of money every year.
+              a.text-primary(href='#')
+                .btn.btn-primary.ins-btn-rect More Details
+
+        .cell-xs-8.cell-sm-5.cell-lg-2-4.offset-top-40.offset-sm-top-0
+          //- Post Boxed
+          .ins-post-boxed.reveal-lg-inline-block
+            .post-boxed-img-wrap
+              a(href='blog-post.html')
+                img(src='images/home-1-268x182.jpg', alt='', width='228', height='182')
+            .ins-post-boxed-caption
+              .ins-post-boxed-title.text-bold Group Medical
+              .ins-post-boxed-content By comparing plans with us you can save a large amount of money every year.
+              a.text-primary(href='#')
+                .btn.btn-primary.ins-btn-rect More Details
+
+        .cell-xs-8.cell-sm-5.cell-lg-2-4.offset-top-40.offset-sm-top-0
+          //- Post Boxed
+          .ins-post-boxed.reveal-lg-inline-block
+            .post-boxed-img-wrap
+              a(href='blog-post.html')
+                img(src='images/home-1-268x182.jpg', alt='', width='228', height='182')
+            .ins-post-boxed-caption
+              .ins-post-boxed-title.text-bold Group Life & Personal Accident
+              .ins-post-boxed-content By comparing plans with us you can save a large amount of money every year.
+              a.text-primary(href='#')
+                .btn.btn-primary.ins-btn-rect More Details
+
+        .cell-xs-8.cell-sm-5.cell-lg-2-4.offset-top-40.offset-sm-top-0
+          //- Post Boxed
+          .ins-post-boxed.reveal-lg-inline-block
+            .post-boxed-img-wrap
+              a(href='blog-post.html')
+                img(src='images/home-1-268x182.jpg', alt='', width='228', height='182')
+            .ins-post-boxed-caption
+              .ins-post-boxed-title.text-bold Workmen Compensation & Employers Liability
+              .ins-post-boxed-content By comparing plans with us you can save a large amount of money every year.
+              a.text-primary(href='#')
+                .btn.btn-primary.ins-btn-rect More Details
+
+        .cell-xs-8.cell-sm-5.cell-lg-2-4.offset-top-40.offset-sm-top-0
+          //- Post Boxed
+          .ins-post-boxed.reveal-lg-inline-block
+            .post-boxed-img-wrap
+              a(href='blog-post.html')
+                img(src='images/home-1-268x182.jpg', alt='', width='228', height='182')
+            .ins-post-boxed-caption
+              .ins-post-boxed-title.text-bold Other Employee Benefits Insurance
+              .ins-post-boxed-content By comparing plans with us you can save a large amount of money every year.
+              a.text-primary(href='#')
+                .btn.btn-primary.ins-btn-rect More Details
+
+      .range.range-xs-center.offset-top-35
+        .cell-xs-8.cell-sm-5.cell-lg-2-4.offset-top-40.offset-sm-top-0
+          //- Post Boxed
+          .ins-post-boxed.reveal-lg-inline-block
+            .post-boxed-img-wrap
+              a(href='blog-post.html')
+                img(src='images/home-1-268x182.jpg', alt='', width='228', height='182')
+            .ins-post-boxed-caption
+              .ins-post-boxed-title.text-bold Group Travel
+              .ins-post-boxed-content By comparing plans with us you can save a large amount of money every year.
+              a.text-primary(href='#')
+                .btn.btn-primary.ins-btn-rect More Details
+
+        .cell-xs-8.cell-sm-5.cell-lg-2-4.offset-top-40.offset-sm-top-0
+          //- Post Boxed
+          .ins-post-boxed.reveal-lg-inline-block
+            .post-boxed-img-wrap
+              a(href='blog-post.html')
+                img(src='images/home-1-268x182.jpg', alt='', width='228', height='182')
+            .ins-post-boxed-caption
+              .ins-post-boxed-title.text-bold Engineering & Construction
+              .ins-post-boxed-content By comparing plans with us you can save a large amount of money every year.
+              a.text-primary(href='#')
+                .btn.btn-primary.ins-btn-rect More Details
+
+        .cell-xs-8.cell-sm-5.cell-lg-2-4.offset-top-40.offset-sm-top-0
+          //- Post Boxed
+          .ins-post-boxed.reveal-lg-inline-block
+            .post-boxed-img-wrap
+              a(href='blog-post.html')
+                img(src='images/home-1-268x182.jpg', alt='', width='228', height='182')
+            .ins-post-boxed-caption
+              .ins-post-boxed-title.text-bold Liabilities & Financial Lines
+              .ins-post-boxed-content By comparing plans with us you can save a large amount of money every year.
+              a.text-primary(href='#')
+                .btn.btn-primary.ins-btn-rect More Details
+
+        .cell-xs-8.cell-sm-5.cell-lg-2-4.offset-top-40.offset-sm-top-0
+          //- Post Boxed
+          .ins-post-boxed.reveal-lg-inline-block
+            .post-boxed-img-wrap
+              a(href='blog-post.html')
+                img(src='images/home-1-268x182.jpg', alt='', width='228', height='182')
+            .ins-post-boxed-caption
+              .ins-post-boxed-title.text-bold Marine, Cargo & Aviation
+              .ins-post-boxed-content By comparing plans with us you can save a large amount of money every year.
+              a.text-primary(href='#')
+                .btn.btn-primary.ins-btn-rect More Details
+
+        .cell-xs-8.cell-sm-5.cell-lg-2-4.offset-top-40.offset-sm-top-0
+          //- Post Boxed
+          .ins-post-boxed.reveal-lg-inline-block
+            .post-boxed-img-wrap
+              a(href='blog-post.html')
+                img(src='images/home-1-268x182.jpg', alt='', width='228', height='182')
+            .ins-post-boxed-caption
+              .ins-post-boxed-title.text-bold Property & Energy
+              .ins-post-boxed-content By comparing plans with us you can save a large amount of money every year.
+              a.text-primary(href='#')
+                .btn.btn-primary.ins-btn-rect More Details
+
+
+  //- Our Partners
+  section.section-30.bg-whisper-1
+    .shell
+      .range
+        .cell-xs-6.cell-md-3
+          +link-image({img: 'client-01-Takaful-209x100'})
+        .cell-xs-6.cell-md-3
+          +link-image({img: 'client-02-national-381x92'})
+        .cell-xs-6.cell-md-3
+          +link-image({img: 'client-03-al-saga-245x100'})
+        .cell-xs-6.cell-md-3
+          +link-image({img: 'client-04-al-ittihad-332x100'})
+
+      .range
+        .cell-xs-6.cell-md-3
+          +link-image({img: 'client-05-new-india-238x80'})
+        .cell-xs-6.cell-md-3
+          +link-image({img: 'client-06-orient-319x100'})
+        .cell-xs-6.cell-md-3
+          +link-image({img: 'client-07-ngi-261x100'})
+        .cell-xs-6.cell-md-3
+          +link-image({img: 'client-08-oriental-260x100'})
+      .range
+        .cell-xs-6.cell-md-3
+          +link-image({img: 'client-09-rak-375x88'})
+        .cell-xs-6.cell-md-3
+          +link-image({img: 'client-10-dar-al-277x100'})
+        .cell-xs-6.cell-md-3
+          +link-image({img: 'client-11-union-195x100'})
+        .cell-xs-6.cell-md-3
+          +link-image({img: 'client-12-dubai-national-201x100'})
+      .range
+        .cell-xs-6.cell-md-3
+          +link-image({img: 'client-13-zurichx158x100'})
+        .cell-xs-6.cell-md-3
+          +link-image({img: 'client-14-adnic-243x90'})
+        .cell-xs-6.cell-md-3
+          +link-image({img: 'client-15-adamjee-156x100'})
+        .cell-xs-6.cell-md-3
+          +link-image({img: 'client-16-buhaira-national-248x90'})
+      .range
+        .cell-xs-6.cell-md-3
+          +link-image({img: 'client-17-alliance-125x100'})
+        .cell-xs-6.cell-md-3
+          +link-image({img: 'client-18-arabia-265x90'})
+        .cell-xs-6.cell-md-3
+          +link-image({img: 'client-19-arabian-147x90'})
+        .cell-xs-6.cell-md-3
+          +link-image({img: 'client-20-dubai-insurance-201x100'})
+
+      .range
+        .cell-xs-6.cell-md-3
+          +link-image({img: 'client-21-generali-353x91'})
+        .cell-xs-6.cell-md-3
+          +link-image({img: 'client-22-metlife-365x63'})
+        .cell-xs-6.cell-md-3
+          +link-image({img: 'client-23-noor-229x90'})
+        .cell-xs-6.cell-md-3
+          +link-image({img: 'client-24-qatar-193x90'})
+      .range
+        .cell-xs-6.cell-md-3
+          +link-image({img: 'client-25-salama-192x90'})
+        .cell-xs-6.cell-md-3
+          +link-image({img: 'client-26-sharjah-365x90'})
+        .cell-xs-6.cell-md-3
+          +link-image({img: 'client-27-united-insurance-175x90'})
+        .cell-xs-6.cell-md-3
+          +link-image({img: 'client-28-watania-340x72'})
+
+
+  //- Mid Vertical Slider
+  //- section.section-50.section-lg-top-0.section-sm-bottom-75.section-md-bottom-100(style='position: relative; z-index: 1000;')
     .shell
       .range.offset-lg-top--35
         .cell-lg-12
@@ -179,7 +697,7 @@ block page
                     figure.image-wrap-default
                       img.img-responsive(src="images/home-04-398x311.jpg", width="398", height="311", alt="")
   //- About Us
-  section.section-50.bg-whisper-1.section-md-75.section-md-90.section-lg-100
+  //- section.section-50.bg-whisper-1.section-md-75.section-md-90.section-lg-100
     .shell
       .range.range-md-middle
         .cell-md-6
@@ -206,7 +724,7 @@ block page
               | Get a Quote
 
   //- Counters
-  section.section-60.section-sm-100.bg-gray-dark.bg-image(style='background-image: url(images/bg-image-6.jpg);')
+  //- section.section-60.section-sm-100.bg-gray-dark.bg-image(style='background-image: url(images/bg-image-6.jpg);')
     .shell
       .range
         .cell-xs-6.cell-sm-3
@@ -238,7 +756,7 @@ block page
             h5.box-header Professional Agents
 
   //- Meet Our Team
-  section.section-50.section-sm-75.section-md-bottom-90
+  //- section.section-50.section-sm-75.section-md-bottom-90
     .shell
       .range
         .cell-xs-12.text-center
@@ -281,7 +799,7 @@ block page
             email: "info@demolink.org"
           })
 
-  //- RD Parallax
+  //- RD Parallax - Testimonial
   section.rd-parallax.bg-gray-base.bg-image(data-on='false', data-md-on='true', style='background-image: url(images/clients-testimonials-parallax-1.jpg)')
     .rd-parallax-layer(data-speed='0.15', data-type='media', data-url='images/clients-testimonials-parallax-1.jpg')
     .rd-parallax-layer(data-speed='0', data-type='html')
@@ -324,336 +842,9 @@ block page
                   .numbering-count
 
 
-  section.section-60.section-sm-90.bg-athens-gray.bg-image.bg-image-sm-hide(style='background-image: url(images/home-bg-image-1.jpg);')
-    .shell
-      .range.range-sm-right
-        .cell-sm-8.cell-md-7.cell-lg-7
-            #tabs-3.tabs-custom.tabs-horizontal.tabs-line.tabs-custom-horizontal
-              ul.nav.nav-tabs
-                li.active: a(href='#tabs-3-1' data-toggle='tab') LIFE INSURANCE
-                li: a(href='#tabs-3-2' data-toggle='tab') TRAVEL INSURANCE
-                li: a(href='#tabs-3-3' data-toggle='tab') HOUSE INSURANCE
-                li: a(href='#tabs-3-4' data-toggle='tab') CAR INSURANCE
-
-              //- Tab panes
-              .tab-content.text-gray-base
-                div#tabs-3-1.tab-pane.fade.in.active
-                  h2
-                    span.sub-head-small Life Insurance Quote
-                  .rd-range-wrap
-                    span.rd-range-label Level of protection:
-                    .rd-range-input-value-3
-                    .rd-range(data-min='1', data-max='1000', data-start='[150]',
-                              data-step='1', data-min-diff='10',
-                              data-input='.rd-range-input-value-3')
-                  h6.text-spacing-0.font-default.offset-top-40 Personal information:
-                  form.range.range-xs-center.range-sm-left.inset-lg-right-50.offset-top-20.rd-mailform(data-form-output="form-output-global", data-form-type='contact', method='post', action='bat/rd-mailform.php')
-                    .cell-sm-6
-                      .form-group.form-group-outside
-                        //Select 2
-                        select#index-business.form-control.select-filter(data-minimum-results-for-search="Infinity")
-                          option(value="1") Do you smoke?
-                          option(value="2") Yes
-                          option(value="3") No
-                        label.form-label.form-label-outside.veil(for="index-business") Do you smoke?
-                    .cell-sm-6.offset-top-20.offset-sm-top-0
-                      .form-group.form-group-outside
-                        //Select 2
-                        select#index-residence.form-control.select-filter(data-minimum-results-for-search="Infinity")
-                          option(value="1") Your age
-                          option(value="2") 18 - 20
-                          option(value="3") 21 - 25
-                          option(value="3") 26 - 36
-                          option(value="3") 37 - 48
-                          option(value="3") 49 - 55
-                        label.form-label.form-label-outside.veil(for="index-residence") Your age
-                    .range.offset-top-40
-                      .cell-sm-12
-                        h6.text-spacing-0.font-default Contact details:
-                      .cell-sm-6.offset-top-20
-                        .form-group.form-group-outside
-                          input#contact-name.form-control.bg-whisper-lighten.border-radius-0(type="text" name="name" data-constraints="@Required")
-                          label.form-label(for="contact-name") Name
-                      .cell-sm-6.offset-top-20
-                        .form-group.form-group-outside
-                          input#contact-phone.form-control.bg-whisper-lighten.border-radius-0(type="text" name="phone" data-constraints="@Required @Numeric")
-                          label.form-label(for="contact-phone") Phone
-                      .cell-sm-6.offset-top-20.offset-sm-top-30
-                        .form-group.form-group-outside
-                          input#contact-email.form-control.bg-whisper-lighten.border-radius-0(type="text" name="email" data-constraints="@Email @Required")
-                          label.form-label(for="contact-email") E-mail
-                      .cell-sm-6.offset-top-20.offset-sm-top-30
-                        button.btn.btn-icon.btn-icon-right.btn-primary-contrast.btn-custom.btn-block(type="submit")
-                          span Get a Quote
-                          span.icon.icon-xs-smaller.fa-angle-right
 
 
-                div#tabs-3-2.tab-pane.fade
-                  h2
-                    span.sub-head-small Travel Insurance Quote
-                  .rd-range-wrap
-                    span.rd-range-label Level of protection:
-                    .rd-range-input-value-3
-                    .rd-range(data-min='1', data-max='1000', data-start='[150]',
-                    data-step='1', data-min-diff='10',
-                    data-input='.rd-range-input-value-3')
-                  h6.text-spacing-0.font-default.offset-top-40 Travel information:
-                  form.range.range-xs-center.range-sm-left.inset-lg-right-50.offset-top-20.rd-mailform(data-form-output="form-output-global", data-form-type='contact', method='post', action='bat/rd-mailform.php')
-                    .cell-sm-6
-                      .form-group.form-group-outside
-                        //Select 2
-                        select#travel-distance.form-control.select-filter(data-minimum-results-for-search="Infinity")
-                          option(value="1") Destination
-                          option(value="2") 10km
-                          option(value="3") 100km
-                          option(value="3") 500km
-                          option(value="3") 1000km
-                        label.form-label.form-label-outside.veil(for="travel-distance") Destination
-                    .cell-sm-6.offset-top-20.offset-sm-top-0
-                      .form-group.form-group-outside
-                        //Select 2
-                        select#travel-time.form-control.select-filter(data-minimum-results-for-search="Infinity")
-                          option(value="1") How long
-                          option(value="2") 5 days
-                          option(value="3") 10 days
-                          option(value="3") 15 days
-                          option(value="3") 20 days
-                          option(value="3") 25 days
-                        label.form-label.form-label-outside.veil(for="travel-time") How long
-                    .range.offset-top-40
-                      
-                      .cell-sm-12
-                        h6.text-spacing-0.font-default Contact details:
-                      .cell-sm-6.offset-top-20
-                        .form-group.form-group-outside
-                          input#travel-contact-name.form-control.bg-whisper-lighten.border-radius-0(type="text" name="name" data-constraints="@Required")
-                          label.form-label(for="travel-contact-name") Name
-                      .cell-sm-6.offset-top-20
-                        .form-group.form-group-outside
-                          input#travel-contact-phone.form-control.bg-whisper-lighten.border-radius-0(type="text" name="phone" data-constraints="@Required @Numeric")
-                          label.form-label(for="travel-contact-phone") Phone
-                      .cell-sm-6.offset-top-20.offset-sm-top-30
-                        .form-group.form-group-outside
-                          input#travel-contact-email.form-control.bg-whisper-lighten.border-radius-0(type="text" name="email" data-constraints="@Email @Required ")
-                          label.form-label(for="travel-contact-email") E-mail
-                      .cell-sm-6.offset-top-20.offset-sm-top-30
-                        button.btn.btn-icon.btn-icon-right.btn-primary-contrast.btn-custom.btn-block(type="submit")
-                          span Get a Quote
-                          span.icon.icon-xs-smaller.fa-angle-right
 
-                div#tabs-3-3.tab-pane.fade
-                  h2
-                    span.sub-head-small House insurance Quote
-                  h6.text-spacing-0.font-default.offset-top-40 Your house:
-                  form.range.range-xs-center.range-sm-left.inset-lg-right-50.offset-top-20.rd-mailform(data-form-output="form-output-global", data-form-type='contact', method='post', action='bat/rd-mailform.php')
-                    .cell-sm-6
-                      .form-group.form-group-outside
-                        //Select 2
-                        select#house-property.form-control.select-filter(data-minimum-results-for-search="Infinity")
-                          option(value="1") What sort of property is it?
-                          option(value="2") Property
-                          option(value="3") Rent
-                        label.form-label.form-label-outside.veil(for="house-property") What sort of property is it?
-                    .cell-sm-6.offset-top-20.offset-sm-top-0
-                      .form-group.form-group-outside
-                        //Select 2
-                        select#house-type.form-control.select-filter(data-minimum-results-for-search="Infinity")
-                          option(value="1") What type of property is it?
-                          option(value="2") House
-                          option(value="3") Apartment
-                          option(value="3") Cottage
-                          option(value="3") Factory
-                          option(value="3") Stock
-                        label.form-label.form-label-outside.veil(for="house-type") What type of property is it?
-                    .cell-sm-6.offset-top-20.offset-sm-top-30
-                      .form-group.form-group-outside
-                        //Select 2
-                        select#house-built.form-control.select-filter(data-minimum-results-for-search="Infinity")
-                          option(value="1") Roughly when was it built?
-                          option(value="2") 1 year
-                          option(value="3") 3 year
-                          option(value="3") 5 year
-                          option(value="3") 10 year
-                          option(value="3") 20 year
-                        label.form-label.form-label-outside.veil(for="house-built") Roughly when was it built?
-                    .cell-sm-6.offset-top-20.offset-sm-top-30
-                      .form-group.form-group-outside
-                        input#house-post-code.form-control.bg-whisper-lighten.border-radius-0(type="text" name="name" data-constraints="@Required ")
-                        label.form-label(for="house-post-code") House Postcode
-                    .range.offset-top-40
-                      .cell-sm-12
-                        h6.text-spacing-0.font-default Contact details:
-                      .cell-sm-6.offset-top-20
-                        .form-group.form-group-outside
-                          input#house-contact-name.form-control.bg-whisper-lighten.border-radius-0(type="text" name="name" data-constraints="@Required")
-                          label.form-label(for="house-contact-name") Name
-                      .cell-sm-6.offset-top-20
-                        .form-group.form-group-outside
-                          input#house-contact-phone.form-control.bg-whisper-lighten.border-radius-0(type="text" name="phone" data-constraints="@Required @Numeric")
-                          label.form-label(for="house-contact-phone") Phone
-                      .cell-sm-6.offset-top-20.offset-sm-top-30
-                        .form-group.form-group-outside
-                          input#house-contact-email.form-control.bg-whisper-lighten.border-radius-0(type="text" name="email" data-constraints="@Email @Required ")
-                          label.form-label(for="house-contact-email") E-mail
-                      .cell-sm-6.offset-top-20.offset-sm-top-30
-                        button.btn.btn-icon.btn-icon-right.btn-primary-contrast.btn-custom.btn-block(type="submit")
-                          span Get a Quote
-                          span.icon.icon-xs-smaller.fa-angle-right
-                div#tabs-3-4.tab-pane.fade
-                  h2
-                    span.sub-head-small Car Insurance Quote
-                  h6.text-spacing-0.font-default.offset-top-40 Personal information:
-                  form.range.range-xs-center.range-sm-left.inset-lg-right-50.offset-top-20.rd-mailform(data-form-output="form-output-global", data-form-type='contact', method='post', action='bat/rd-mailform.php')
-                    .cell-sm-6
-                      .form-group.form-group-outside
-                        //Select 2
-                        select#car-property.form-control.select-filter(data-minimum-results-for-search="Infinity")
-                          option(value="1") Manufacturer car
-                          option(value="2") USA
-                          option(value="3") Europe
-                          option(value="3") Asia
-                          option(value="3") Africa
-                        label.form-label.form-label-outside.veil(for="car-property") Manufacturer car
-                    .cell-sm-6.offset-top-20.offset-sm-top-0
-                      .form-group.form-group-outside
-                        //Select 2
-                        select#car-type.form-control.select-filter(data-minimum-results-for-search="Infinity")
-                          option(value="1") Model car
-                          option(value="2") BMW
-                          option(value="3") Citroen
-                          option(value="3") Honda
-                          option(value="3") Ford
-                          option(value="3") FIAT
-                        label.form-label.form-label-outside.veil(for="car-type") Model car
-                    .cell-sm-6.offset-top-20.offset-sm-top-30
-                      .form-group.form-group-outside
-                        //Select 2
-                        select#car-built.form-control.select-filter(data-minimum-results-for-search="Infinity")
-                          option(value="1") Registration year
-                          option(value="2") 1900+
-                          option(value="3") 2000+
-                          option(value="3") 2010+
-                        label.form-label.form-label-outside.veil(for="car-built") Registration year
-                    .cell-sm-6.offset-top-20.offset-sm-top-30
-                      .form-group.form-group-outside
-                        //Select 2
-                        select#car-yers.form-control.select-filter(data-minimum-results-for-search="Infinity")
-                          option(value="1") Your age
-                          option(value="2") 18-22
-                          option(value="3") 23-28
-                          option(value="3") 29-36
-                          option(value="3") 37-48
-                          option(value="3") 49-56
-                          option(value="3") 57+
-                    .range.offset-top-40
-                      .cell-sm-12
-                        h6.text-spacing-0.font-default Contact details:
-                      .cell-sm-6.offset-top-20
-                        .form-group.form-group-outside
-                          input#car-contact-name.form-control.bg-whisper-lighten.border-radius-0(type="text" name="name" data-constraints="@Required")
-                          label.form-label(for="car-contact-name") Name
-                      .cell-sm-6.offset-top-20
-                        .form-group.form-group-outside
-                          input#car-contact-phone.form-control.bg-whisper-lighten.border-radius-0(type="text" name="phone" data-constraints="@Required @Numeric")
-                          label.form-label(for="car-contact-phone") Phone
-                      .cell-sm-6.offset-top-20.offset-sm-top-30
-                        .form-group.form-group-outside
-                          input#car-contact-email.form-control.bg-whisper-lighten.border-radius-0(type="text" name="email" data-constraints="@Email @Required ")
-                          label.form-label(for="car-contact-email") E-mail
-                      .cell-sm-6.offset-top-20.offset-sm-top-30
-                        button.btn.btn-icon.btn-icon-right.btn-primary-contrast.btn-custom.btn-block(type="submit")
-                          span Get a Quote
-                          span.icon.icon-xs-smaller.fa-angle-right
 
-  section.section-50.section-sm-90.section-sm-bottom-100
-    .shell.text-center
-      h2
-        span.sub-head-small Latest News
-      .range.range-xs-center.offset-top-35
-        .cell-xs-8.cell-sm-5.cell-lg-3
-          //- Post Boxed
-          .post-boxed.reveal-lg-inline-block
-            .post-boxed-img-wrap
-              a(href='blog-post.html')
-                img(src='images/home-1-268x182.jpg', alt='', width='268', height='182')
-            .post-boxed-caption
-              .post-boxed-title.text-bold
-                a(href='blog-post.html') A Look into Nonprofit Risk Management
-              .offset-top-5
-                //- List Inline
-                ul.list-inline.list-inline-dashed.text-uppercase.font-accent
-                  li JUNE 14, 2016
-                  li
-                    span
-                      | by
-                      ="\t"
-                      a.text-primary(href='#') ADMIN
-        .cell-xs-8.cell-sm-5.cell-lg-3.offset-top-40.offset-sm-top-0
-          //- Post Boxed
-          .post-boxed.reveal-lg-inline-block
-            .post-boxed-img-wrap
-              a(href='blog-post.html')
-                img(src='images/home-2-268x182.jpg', alt='', width='268', height='182')
-            .post-boxed-caption
-              .post-boxed-title.text-bold
-                a(href='blog-post.html') Workers’ Compensation: Combinability of Insureds
-              .offset-top-5
-                //- List Inline
-                ul.list-inline.list-inline-dashed.text-uppercase.font-accent
-                  li JUNE 20, 2016
-                  li
-                    span
-                      | by
-                      ="\t"
-                      a.text-primary(href='#') ADMIN
-        .cell-xs-8.cell-sm-5.cell-lg-3.offset-top-40.offset-lg-top-0
-          //- Post Boxed
-          .post-boxed.reveal-lg-inline-block
-            .post-boxed-img-wrap
-              a(href='blog-post.html')
-                img(src='images/home-3-268x182.jpg', alt='', width='268', height='182')
-            .post-boxed-caption
-              .post-boxed-title.text-bold
-                a(href='blog-post.html') What 25 Years in Insurance Has Taught Me!
-              .offset-top-5
-                //- List Inline
-                ul.list-inline.list-inline-dashed.text-uppercase.font-accent
-                  li JUNE 23, 2016
-                  li
-                    span
-                      | by
-                      ="\t"
-                      a.text-primary(href='#') ADMIN
-        .cell-xs-8.cell-sm-5.cell-lg-3.offset-top-40.offset-lg-top-0
-          //- Post Boxed
-          .post-boxed.reveal-lg-inline-block
-            .post-boxed-img-wrap
-              a(href='blog-post.html')
-                img(src='images/home-4-268x182.jpg', alt='', width='268', height='182')
-            .post-boxed-caption
-              .post-boxed-title.text-bold
-                a(href='blog-post.html') How to Properly Extend Insured Status
-              .offset-top-5
-                //- List Inline
-                ul.list-inline.list-inline-dashed.text-uppercase.font-accent
-                  li JUNE 12, 2016
-                  li
-                    span
-                      | by
-                      ="\t"
-                      a.text-primary( href='#') ADMIN
-
-  //- Our Partners
-  section.section-30.bg-whisper-1
-    .shell
-      .range
-        .cell-xs-6.cell-md-3
-          +link-image({img: 'clients-1-126x68'})
-        .cell-xs-6.cell-md-3
-          +link-image({img: 'clients-2-126x100'})
-        .cell-xs-6.cell-md-3
-          +link-image({img: 'clients-4-169x68'})
-        .cell-xs-6.cell-md-3
-          +link-image({img: 'clients-6-138x55'})
   //- Page Footer
   include ../sections/_section-footer-default

@@ -21,9 +21,11 @@ $gray-light:              #dedede;
 $gray-lighter:            #f9f9f9;
 
 //$brand-primary:           #58c4a7;
-$brand-primary:           #00689E;
+//$brand-primary:           #66CCFF  // Set by Arun
+$brand-primary: #009dd9;  // Set by Rajesh
 //$brand-success:           #58c476;
-$brand-success:           #66CCFF;
+//$brand-success:           #00689E;
+$brand-success:           #0069A0;
 
 $brand-info:              #3e9cf6;
 $brand-warning:           #c49558;
@@ -32,7 +34,9 @@ $brand-danger:            #fe4a21;
 
 $white:           #fff;
 
-$keppel:          #42b294;
+//$keppel:          #42b294;
+$keppel: #0082c7;
+
 $red-orange:      #ff4b22;
 
 $red-orange-1:    #f8333c;
@@ -41,6 +45,8 @@ $gorse:           #fde74c;
 $gold:            #ffd400;
 $cello:           #1e3953;
 $kashmir-blue:    #57738f;
+
+
 $bismark:         #436281;
 $blue-bayoux:     #435d77;
 
@@ -965,7 +971,8 @@ $carousel-caption-color:                      #fff;
 //
 //##
 
-$page-loader-v-1-bg:              $gray-base;
+//- $page-loader-v-1-bg:              $gray-base;
+$page-loader-v-1-bg:              $athens-gray;
 $page-loader-v-1-padding:         0 25px;
 //** spinner
 $page-loader-v-1-spinner-width:   56px;
@@ -1052,7 +1059,7 @@ $range-ws-sm:         30px;
 $range-ws-lg:         66px;
 
 $cell-count:          12;
-$cell-spacing:        30px;
+$cell-spacing:        10px; //30px to 10px for 5 columns layout
 $cell-spacing-narrow: 10px;
 
 
