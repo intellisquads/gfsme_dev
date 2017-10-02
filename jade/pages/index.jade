@@ -22,14 +22,43 @@ block page
   include ../sections/_section-header-default
   //- include ../sections/_section-slider
 
-  //- Insurnace items in Circle
-  section.section-60.section-sm-90.bg-athens-gray.bg-image.bg-image-sm-hide(style='background-image: url(images/home-bg-image-1.jpg);')
+  section.section-60.section-sm-90.bg-athens-gray.bg-image.bg-image-sm-hide(style='background-image: url(images/home-bg-image-circle.jpg);')
+        .range.range-sm-right
+            .cell-sm-8.cell-md-7.cell-lg-7
+                h5.centerTitle Select a Product to Quote
+                .all_service_tab
+                    a.circleTab.v3term(onclick="RedirectUrlHomeProduct('http://termlife.policybazaar.com/');getClickv3(1, 'Term_Click')", href='javascript:void(0);')
+                        span
+                            p Life & Critical Illness
+                    a.circleTab.v3investment(onclick="RedirectUrlHomeProduct('http://investmentlife.policybazaar.com/#/?planType=1');getClickv3(1, 'Investment_Click')", href='javascript:void(0);')
+                        span Savings & Investment
+                    a.circleTab.v3car(onclick="RedirectUrlHomeProduct('http://newcar.policybazaar.com');getClickv3(1, 'Car_Click')", href='javascript:void(0);')
+                        span Retirement
+                    a.circleTab.v3child(onclick="RedirectUrlHomeProduct('http://investmentlife.policybazaar.com/#/?planType=3');getClickv3(1, 'Child_Click')", href='javascript:void(0);')
+                        span
+                            p Child Education
+            .cell-sm-8.cell-md-7.cell-lg-7
+                h5.centerTitle Get Instant Quote
+                .all_service_tab
+                    a.circleTab.v3health(onclick="RedirectUrlHomeProduct('http://health.policybazaar.com');getClickv3(1, 'Health_Click')", href='javascript:void(0);')
+                        span Health
+                    a.circleTab.v3car(onclick="RedirectUrlHomeProduct('http://twowheeler.policybazaar.com');getClickv3(1, 'TwoWheeler_Click')", href='javascript:void(0);')
+                        span Motor
+                    a.circleTab.v3taxsaving(onclick="RedirectUrlHomeProduct('http://investmentlife.policybazaar.com/#/?planType=1');getClickv3(1, 'TaxSaving_Click')", href='javascript:void(0);')
+                        span Home
+                    a.circleTab.v3travel(onclick="RedirectUrlHomeProduct('http://travel.policybazaar.com');getClickv3(1, 'Travel_Click')", href='javascript:void(0);')
+                        span Travel
+
+
+
+
+  //  section.section-60.section-sm-90.bg-athens-gray.bg-image.bg-image-sm-hide(style='background-image: url(images/home-bg-image-1.jpg);')
     .shell
       .range.range-sm-right
         .cell-sm-8.cell-md-7.cell-lg-7
             #tabs-3.tabs-custom.tabs-horizontal.tabs-line.tabs-custom-horizontal
               ul.nav.nav-tabs
-                li.active: a(href='#tabs-3-1' data-toggle='tab') LIFE INSURANCE
+                li.active: a(href='#tabs-3-1' data-toggle='tab') Modified Insurance
                 li: a(href='#tabs-3-2' data-toggle='tab') TRAVEL INSURANCE
                 li: a(href='#tabs-3-3' data-toggle='tab') HOUSE INSURANCE
                 li: a(href='#tabs-3-4' data-toggle='tab') CAR INSURANCE
