@@ -1,7 +1,3 @@
-.centerTitle {
-  text-align: center;
-}
-
 .all_service_tab .circleTab {
   display: inline-block;
   font-size: 13px;
@@ -25,7 +21,13 @@
   -webkit-transition: -webkit-transform ease-out 0.1s, background 0.2s;
   -moz-transition: -moz-transform ease-out 0.1s, background 0.2s;
   transition: transform ease-out 0.1s, background 0.2s;
+
 }
+
+.all_service_tab_title_box{
+  width: 680px;
+}
+
 .all_service_tab .circleTab fig{
   position: absolute;
   top: -7px;
@@ -336,12 +338,20 @@
   .all_service_tab .circleTab {
     zoom: 1.3;
   }
+
+  .all_service_tab_title_box{
+    width: 680px;
+  }
 }
 
 @media only screen and (min-width: 1400px) and (max-width: 1600px) {
 
   .all_service_tab .circleTab {
     margin: 30px;
+  }
+
+  .all_service_tab_title_box{
+    width: 680px;
   }
 }
 
@@ -663,6 +673,10 @@
     background-position: -536px -508px;
   }
 
+  .all_service_tab_title_box{
+    width: 385px;
+  }
+
 }
 
 @-webkit-keyframes sonarEffect {
@@ -707,3 +721,6 @@
     opacity: 0;
   }
 }
+
+
+
