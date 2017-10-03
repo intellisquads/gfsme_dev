@@ -13,16 +13,10 @@ block page
 
 
   +page-title(pageName, 'bg-image-8')
-  .rd-google-map(class="rd-google-map__model", data-zoom='15', data-x='-73.9874068', data-y='40.643180' data-styles='[{"featureType":"all","stylers":[{"saturation":0},{"hue":"#e7ecf0"}]},{"featureType":"road","stylers":[{"saturation":-70}]},{"featureType":"transit","stylers":[{"visibility":"off"}]},{"featureType":"poi","stylers":[{"visibility":"off"}]},{"featureType":"water","stylers":[{"visibility":"simplified"},{"saturation":-60}]}]')
-    ul.map_locations
-      li(data-y='40.643180', data-x='-73.9874068')
-        p
-          | 9870 ST VINCENT PLACE,
-          | GLASGOW, DC 45 FR 45
-  ='\n'
+
 
   //- Get in Touch
-  section.section-60.section-sm-top-90.section-sm-bottom-100
+  section.section-60.section-sm-top-90
     .shell
       .range.range-md-justify
         .cell-md-7.cell-lg-6.offset-top-50.offset-md-top-0
@@ -56,36 +50,34 @@ block page
               .cell-sm-10.cell-md-12
                 h3.text-spacing--25 How to Find Us
                 p.offset-md-top-40.text-gray-base.
-                  If you have any questions, just fill in the contact form, and we will answer you shortly. If you are living nearby, come visit AllRisk at one of our comfortable offices.
+                  If you have any questions, just fill in the contact form, and we will answer you shortly. If you are living nearby, come visit Global Insurance Brokers at one of our comfortable offices.
 
               .cell-sm-6.cell-md-12.offset-top-30.offset-sm-top-45
-                h5.text-spacing--25 Headquarters
+                h5.text-spacing--25 Corporate Office
                 address.contact-info
-                  p.text-uppercase.text-gray-base 9863 - 9867 MILL ROAD, CAMBRIDGE, MG09 99HT.
+                  p.text-uppercase.text-gray-base P.O. Box: 72629, Office No. 101
+                  .text-uppercase.text-gray-base Saqr Bin Hamdan Al Falahi Tower
+                  .text-uppercase.text-gray-base (Near to KFC, SFC Building)
+                  .text-uppercase.text-gray-base Hamdan Street, Abu Dhabi, UAE.
                   dl.list-terms-inline
                     dt Telephone
-                    dd: a.link-gray-base(href='callto:#') +1 800 603 6035
+                    dd: a.link-gray-base(href='callto:#') +971 2 444 9091
 
                   dl.list-terms-inline
                     dt E-mail
-                    dd: a.link-primary(href='mailto:#') mail@demolink.org
-
-              .cell-sm-6.cell-md-12.offset-top-30.offset-sm-top-45.offset-md-top-30
-                h5.text-spacing--25 Support Centre
-                address.contact-info
-                  p.text-uppercase.text-gray-base 9870 ST VINCENT PLACE, GLASGOW, DC 45 FR 45
-                  dl.list-terms-inline
-                    dt Telephone
-                    dd: a.link-gray-base(href='callto:#') +1 800 603 6035
-
-                  dl.list-terms-inline
-                    dt E-mail
-                    dd: a.link-primary(href='mailto:#') mail@demolink.org
+                    dd: a.link-primary(href='mailto:#') support@gfsme.com
 
 
+
+  section.section-60.section-sm-bottom-50
+    .rd-google-map(class="rd-google-map__model", data-zoom='17', data-x='54.3667115', data-y='24.4927724' data-styles='[{"featureType":"all","stylers":[{"saturation":0},{"hue":"#e7ecf0"}]},{"featureType":"road","stylers":[{"saturation":-70}]},{"featureType":"transit","stylers":[{"visibility":"off"}]},{"featureType":"poi","stylers":[{"visibility":"off"}]},{"featureType":"water","stylers":[{"visibility":"simplified"},{"saturation":-60}]}]')
+    ul.map_locations
+      li(data-x='54.3667115', data-y='24.4927724')
+        p
+          | GLOBAL INSURANCE BROKERS
+          | COMPANY LLC
+          | CORPORATE OFFICE
   ='\n'
 
 
-
-  //- Page Footer
-  include ../sections/_section-footer-default
+    include ../sections/_section-footer-default
