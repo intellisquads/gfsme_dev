@@ -26,6 +26,8 @@
 
 .all_service_tab_title_box{
   width: 680px;
+  text-align: center;
+  margin-top: 30px;
 }
 
 .all_service_tab .circleTab fig{
@@ -333,21 +335,28 @@
 @media screen and (min-width: 1900px) {
   .all_service_tab {
     width: 88%;
-    margin: 55px auto;
+   // margin: 55px auto;
   }
   .all_service_tab .circleTab {
     zoom: 1.3;
   }
 
   .all_service_tab_title_box{
-    width: 680px;
+    width: 840px;
+    margin-top: 60px;
+  }
+
+  h5{
+
+    font-size: 24px;
+
   }
 }
 
 @media only screen and (min-width: 1400px) and (max-width: 1600px) {
 
   .all_service_tab .circleTab {
-    margin: 30px;
+   // margin: 30px;
   }
 
   .all_service_tab_title_box{

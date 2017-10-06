@@ -3,9 +3,9 @@ extends  ../_skeleton
 //- Includes
 include ../elements/_ui-thumbnail-1
 include ../elements/_ui-quote-vertical
-include ../elements/_ui-icon-box-horizontal
+include ../elements/_ui-icon-box-our-values
 include ../elements/_ui-thumbnail-1
-include ../elements/_ui-thumbnail-2
+include ../elements/_ui-thumbnail-management
 
 block variables
   - var activeIndex = 1
@@ -19,35 +19,110 @@ block page
   include ../sections/_section-header-default
 
 
+
   +page-title(pageName, 'bg-image-5')
+
+  section.section-66.section-sm-90
+    .shell
+      .range
+        .cell-xs-12
+          h3 About Global Insurance Brokers
+
+      .range.range-lg-justify.offset-top-30
+        .cell-xs-12.text-secondary
+          p
+            | Global Insurance Brokers Company LLC (GLOBAL) is currently operational in UAE as an Insurance Broker duly licensed by the UAE
+            | Insurance Authority with Registration No. (31), to provide insurance broking and consultancy services in UAE.
+            | Global Insurance began operations in the year 1989, and was one of the first corporate Insurance brokerage houses in UAE.
+          p
+            |  Global provides services across the insurance spectrum, including risk management, insurance broking, to local & multinational companies
+            | operating in all sectors of the economy. Global is in the list of first ten existing brokers in the country, and is a growing company dedicated in
+            | achieving superior results to the satisfaction of our clients.
+          p
+            |  We commit ourselves to ensure that Global’s expertise and knowledge of business forms a unique partnership that guarantees the
+            | procurement of tailor-made insurance security for clients at the most competitive prices the market can offer.
+
+  ='\n'
+
+    section.bg-whisper.section-66
+      .shell
+        .range
+          .cell-xs-12
+            h3 Who are we as Insurance Brokers
+
+        .range.range-lg-justify.offset-top-30
+          .cell-xs-12.text-secondary
+            p
+             |  Global Insurance is a multidimensional insurance broking company with worldwide capabilities committed to being a broker of first choice for clients who demand the best in quality service and professional expertise
+             | We are dedicated insurance professionals who act as intermediary of our clients and in their best interest
+            p
+             | Primarily we help our clients to identify their insurance needs, and buy the needed insurance on behalf of our clients at most favorable terms and price
+             | We assist and support our clients in processing & negotiating their claims
+    ='\n'
 
   //- Why Choose Us
   section.section-60.section-sm-90.bg-athens-gray.bg-image.bg-image-sm-hide(style='background-image: url(images/about-1.jpg);')
     .shell
       .range.range-sm-right
         .cell-sm-8.cell-md-7.cell-lg-5
-          .inset-sm-left-100
-            h3.text-spacing--25 Why Choose Us
-          .inset-sm-left-30.inset-sm-right-30.offset-top-40
+          .inset-sm-left
+            h3.text-spacing--25 Our Values
+            p.cell-sm-8.cell-md-7.cell-lg-5 Global Insurance Brokers stands strong by adhering to our foundation of values and will be used in the everyday business practices of the organization.
+          .inset-sm-left.offset-top-20
             ul.list-xl
               li
                 +icon-box-left({
-                  icon: ['icon-md', 'material-design-check51'],
-                  header: 'Our Mission',
-                  text: 'Our mission is to provide outstanding service and superior coverage to every one of our clients.'
-                })
-              li
-                +icon-box-left({
-                  icon: ['icon-md', 'material-design-chat75'],
-                  header: '24/7 Support',
-                  text: 'Our dedicated support professionals are always here to help no matter your issue.'
+                    icon: ['icon-md', 'material-design-check51'],
+                    header: 'Relationships',
+                    text: 'We value all our people policyholders, directors, employees, agents and all our business partners  They are the strength of our organization.',
+                    text1: 'We value the respect we have for each other.',
+                    text2: 'We value fair and flexible business and employment practices.',
+                    text3: 'We value social interaction with all our people.'
                 })
 
               li
                 +icon-box-left({
-                  icon: ['icon-md', 'material-design-briefcase50'],
-                  header: 'Our Commitment',
-                  text: 'We are proud to offer our clients competitive pricing, a broad choice of products and unparalleled advocacy.'
+                    icon: ['icon-md', 'material-icons-group'],
+                    header: 'Teamwork',
+                    text: 'We value the concept of “all under one roof”.',
+                    text1: 'We value working together for common goals.'
+                })
+
+              li
+                +icon-box-left({
+                    icon: ['icon-md', 'material-icons-group_work'],
+                    header: 'Integrity',
+                    text: 'We value integrity in all our business dealings.',
+                    text1: 'We value accountability as an organization and individually.',
+                    text2: 'We value our strong historic roots in our industry and community.',
+                    text3: 'We value consistency in our approach to decisions.'
+                })
+
+              li
+                +icon-box-left({
+                    icon: ['icon-md', 'material-icons-thumb_up'],
+                    header: 'Enthusiasm',
+                    text: 'We value being selfmotivated.',
+                    text1: 'We value positive energy.'
+                })
+
+              li
+                +icon-box-left({
+                    icon: ['icon-md', 'material-icons-voice_chat'],
+                    header: 'Communication',
+                    text: 'We value open communications.',
+                    text1: 'We value listening to others.',
+                    text2: 'We value sharing our knowledge and continuing education.'
+                })
+
+              li
+                +icon-box-left({
+                    icon: ['icon-md', 'material-design-briefcase50'],
+                    header: 'Stewardship',
+                    text: 'We value the importance of long-term financial stability.',
+                    text1: 'We value the sound management of the assets of the organization.',
+                    text2: 'We value being community minded.',
+                    text3: 'We value being environmentally conscious.'
                 })
 
   ='\n'
@@ -55,96 +130,95 @@ block page
   //- Counters
   section.section-60.section-sm-100.bg-gray-dark.bg-image(style='background-image: url(images/bg-image-6.jpg);')
     .shell
+
+      h3.text-center Fundamental Principles
       .range.offset-top-45
+
         .cell-xs-6.cell-sm-3
           .box-counter.box-counter-inverse.box-counter-white
-            img(src="images/icon-01.png", width="53", height="50", alt="")
+            img(src="images/icon-04.png", width="53", height="50", alt="")
             //- CountTo
-            .text-large.counter.offset-top-15 1450
-            h5.box-header.text-white Happy Clients
+          // .text-large.counter.offset-top-15 1450
+          h5.box-header Our Clients always come first.
 
-        .cell-xs-6.cell-sm-3.offset-top-40.offset-xs-top-0
+        .cell-xs-6.cell-sm-3
           .box-counter.box-counter-inverse.box-counter-white
-            img(src="images/icon-02.png", width="41", height="43", alt="")
+            img(src="images/icon-01.png", width="52", height="53", alt="")
             //- CountTo
-            .text-large.counter.offset-top-15 23
-            h5.box-header Insurance Products
+            //.text-large.counter.offset-top-15 23
+            h5.box-header We must provide the highest level of service with integrity.
 
-        .cell-xs-6.cell-sm-3.offset-top-40.offset-sm-top-0
+        .cell-xs-6.cell-sm-3
+          .box-counter.box-counter-inverse.box-counter-white
+            img(src="images/icon-02.png", width="52", height="53", alt="")
+            //- CountTo
+            //.text-large.counter 10
+            h5.box-header Ensuring client satisfaction through the provision of quality service.
+
+        .cell-xs-6.cell-sm-3
           .box-counter.box-counter-inverse.box-counter-white
             img(src="images/icon-03.png", width="52", height="53", alt="")
             //- CountTo
-            .text-large.counter 10
-            h5.box-header Years of Experience
-
-        .cell-xs-6.cell-sm-3.offset-top-40.offset-sm-top-0
-          .box-counter.box-counter-inverse.box-counter-white
-            img(src="images/icon-04.png", width="55", height="46", alt="")
-            //- CountTo
-            .text-large.counter.offset-top-20 196
-            h5.box-header Professional Agents
-  ='\n'
-
-  //- Who we are?
-  section.section-66.section-sm-90.section-lg-bottom-120
-    .shell
-      .range
-        .cell-xs-12
-          h3 You Can Trust Us
-
-      .range.range-lg-justify.offset-top-30
-        .cell-sm-6.cell-lg-5.text-secondary
-          .inset-sm-right-15.inset-lg-right-0
-            p.
-              Our agency can provide you and your family with quality insurance for your personal, business and financial needs. Our knowledgeable agents can help your find affordable and reliable car insurance, home insurance, commercial insurance or life insurance.
-            p.
-              Our focus is to help our clients grow their assets. We believe in being local and we strive to improve the communities where we live and work.
-
-        .cell-sm-6.offset-top-40.offset-sm-top-0
-          .shift-sm-top-1
-            include ../_includes/_progress-list
+            //.text-large.counter 10
+            h5.box-header Innovation is requisite for our survival in a changing world.
   ='\n'
 
   section.section-66.section-sm-bottom-90.bg-whisper
     .shell
-      .range.offset-top-40
-        .cell-xs-6.cell-sm-4.cell-md-3
-          +thumbnail-2({
-            img: 'team-9-246x300',
-            header: "Amanda Smith",
-            caption: "Chief Executive Officer",
-            phone: "+1 (409) 987–5874",
-            email: "info@demolink.org"
+
+      .range
+        .cell-xs-12
+          h3.text-center Our Management
+
+        .cell-md-2.offset-top-40.offset-sm-top-0
+
+        .cell-xs-12.cell-sm-6.cell-md-3.offset-top-40
+          +thumbnail-management({
+              img: 'pic-1-189x189',
+              header: "Mr. Faisal Abdulwahab",
+              caption: "Founder & Chairman"
           })
 
-        .cell-xs-6.cell-sm-4.cell-md-3.offset-top-40.offset-xs-top-0
-          +thumbnail-2({
-            img: 'team-10-246x300',
-            header: "John Doe",
-            caption: "Executive Vice President",
-            phone: "+1 (409) 987–5874",
-            email: "info@demolink.org"
+          p.text-gray-base-05.text-center
+            | Mr. Faisal a business management graduate from Alain University, 1982 batch is a senior banking professional with more than 30 years of experience in handling several wealth management assignments and banking
+            | operations across UAE. After successful completion of his service as Manager Operations (CENTRAL BANK, UAE), he retired in the year 2016. His vision for GLOBAL is to be one of the most trusted and preferred Insurance
+            | Broker of UAE.
+
+        .cell-md-2.offset-top-40.offset-sm-top-0
+
+        .cell-xs-12.cell-sm-6.cell-md-3.offset-top-40
+          +thumbnail-management({
+              img: 'pic-2-189x189',
+              header: "Mr. Bahuleyan Kesavan",
+              caption: "Founder & Managing Director"
           })
 
-        .cell-xs-6.cell-sm-4.cell-md-3.offset-top-40.offset-sm-top-0
-          +thumbnail-2({
-            img: 'team-11-246x300',
-            header: "Vanessa Ives",
-            caption: "Chief Financial Officer",
-            phone: "+1 (409) 987–5874",
-            email: "info@demolink.org"
-          })
+          p.text-gray-base-05.text-center
+            | Mr. Bahuleyan, a first generation entrepreneur started his career in UAE in the year 1970, he has more than 40 years of diverse experience in managing businesses, sales and people across various
+            | consumer segments in India and UAE. He has been in the advisory board of reputed schools and was also the executive member of several associations and cultural organizations in UAE.
+            | He is the visionary behind Global Insurance Brokers.
 
-        .cell-xs-6.cell-sm-4.cell-md-3.offset-top-40.offset-md-top-0
-          +thumbnail-2({
-            img: 'team-12-246x300',
-            header: "David Nicholson",
-            caption: "Vice President of Claims",
-            phone: "+1 (409) 987–5874",
-            email: "info@demolink.org"
-          })
+        .cell-md-2.offset-top-40.offset-sm-top-0
 
     ='\n'
+
+
+  section.section-66.section-sm-90
+    .shell
+      .range
+        .cell-xs-12
+          h3 Our Vision & Mission
+
+      .range.range-lg-justify.offset-top-30
+        .cell-xs-12.text-secondary
+          p
+            | Our vision is to be the leading and most trusted Insurance & Investment distributor, offering world class, customized and professional brokerage insurance services,
+            | driven by passionate people, committed to the future financial security and success of our clients and to emerge as a total service provider in the financial market with thrust
+            | in providing quality services and transparency as core values.
+          p
+            | Global Insurance Brokers is committed to the principles of service, integrity and professionalism while providing financial protection and peace of mind for our valued
+            | clients by offering quality advice and insurance products through independent certified advisors. In all we do, we are dedicated to exceeding their expectations.
+  ='\n'
 
 
 
