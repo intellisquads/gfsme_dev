@@ -116,7 +116,7 @@ $layout-boxed-width:      1920px;
 
 
 // Base FZ & LH (w/o units)
-$base-text-size:          14;
+$base-text-size:          16;
 $base-lh-size:            24;
 
 $base-vm-size:            (($base-text-size*100)/$template-width)*1vw;
@@ -311,7 +311,7 @@ $input-color:                    $text-color;
 $input-border:                   $gray-light;
 
 //** Font size for input
-$input-font-size:                14px;
+$input-font-size:                16px;
 
 
 //** Default `.form-control` border radius
