@@ -80,7 +80,7 @@ $footer-bg: 			      $gray-base;
 //** Background color for `<body>`.
 $body-bg:               $white;
 //** Global text color on `<body>`.
-$text-color:            $gray;
+$text-color:            $gray-dark;
 
 //** Global textual link color.
 $link-color:            $text-color;
@@ -116,7 +116,7 @@ $layout-boxed-width:      1920px;
 
 
 // Base FZ & LH (w/o units)
-$base-text-size:          16;
+$base-text-size:          17;
 $base-lh-size:            24;
 
 $base-vm-size:            (($base-text-size*100)/$template-width)*1vw;
