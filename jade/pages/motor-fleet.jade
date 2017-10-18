@@ -1,0 +1,66 @@
+extends  ../_skeleton
+
+//- Includes
+
+block variables
+    - var activeIndex = 1
+    - var pageName = 'Motor Fleet Insurance'
+
+block title
+    title=pageName
+
+block page
+    //- Page Header
+    include ../sections/_section-header-default
+
+
+
+    +page-title(pageName, 'bg-bike')
+
+    //- Vertical Tabs
+    section.section-sm-15
+        .shell
+            p
+                h4.text-center We offer following Insurance policies under
+                h3.text-center Motor Fleet Insurance
+            .range.range-sm-center.section-15
+                .cell-lg-push-12
+                    //- Bootstrap tabs
+                    #tabs-2.tabs-custom.tabs-vertical.tabs-corporate
+                        //- Nav tabs
+                        ul.nav.nav-tabs
+                            li.active: a(href='#tabs-2-1' data-toggle='tab') Motor Comprehensive Insurance
+                            li: a(href='#tabs-2-2' data-toggle='tab') Motor Third Party Insurance
+                            li: a(href='#tabs-2-3' data-toggle='tab') Motor Fleet Insurance
+                            li: a(href='#tabs-2-4' data-toggle='tab') Contractors Plant &<br>Machinery Insurance (CPM)
+
+
+                        //- Tab panes
+                        .tab-content.text-secondary
+                            div#tabs-2-1.tab-pane.fade.in.active
+                                p
+                                    img(src='images/' + 'insurance-car_comprehensive-391x200.jpg', alt='', width='100%', height='100%', class='section-sm-30')
+
+                                p Our agency can provide you and your family with quality insurance for your personal, business and financial needs. Our knowledgeable agents can help your find affordable and reliable car insurance, home insurance, commercial insurance or life insurance. The staff truly believes, “It’s all about protecting you!” Our mission is to help protect people in our communities from the financial impact of lawsuits, fires, car accidents and other unexpected incidents. Our focus is to help our clients grow their assets.
+                                p We believe in being local and we strive to improve the communities where we live and work. We offer an inclusive selection of products and client-focused service to go beyond meeting your needs and instead, exceeding your expectations! Our team of professionals is experienced and prepared to customize your policies to fit your situation and lifestyle.
+
+                            div#tabs-2-2.tab-pane.fade
+                                p We underwrite specialty lines insurance on an admitted basis through AllRisk Insurance Company, Stonewood Insurance Company, and Falls Lake General Insurance Company. As the admitted insurance platform of James River Group and as subsidiaries of James River Group Holdings, Ltd., we operate against a capital base of almost $500 million.
+                                p As with our affiliates, James River Insurance Company (excess and surplus lines) and JRG Re (Bermuda based reinsurer), we focus on underwriting specialty insurance products through limited distribution partners focused in our desired industry segments. We prefer to write specialty insurance policies on a primary basis, and combine an experienced, common sense approach to the business with rigorous underwriting and claims management and an entrepreneurial culture. We believe that this combination results in success for both you and AllRisk.
+
+                            div#tabs-2-3.tab-pane.fade
+                                p We believe in More Better, and we work each day to ensure that our culture is embodied in our actions. We believe that it is OK to expect more from ourselves each and every day, in each and every activity and action. Equally, we believe it is OK to expect more from others in their actions and interactions with us. By focusing on achieving success in each and every action and interaction, we believe we both win.
+                                p You get a more responsive, creative, financially sound, insurer that takes the time to understand your opportunities. We get an engaged and knowledgeable distribution source for our business, one that trusts that we will work for our mutual success in everything that we do. You and your clients deserve it. More. Better.
+
+                            div#tabs-2-4.tab-pane.fade
+                                p We underwrite specialty insurance products in more than 40 states in the U.S. We are licensed to underwrite property and casualty lines of insurance for both commercial and personal risks. While our heritage is in underwriting workers compensation insurance for specialty classes including construction and light industrial, and our focus is on writing casualty lines of insurance, we are licensed to write all property casualty lines of commercial and personal insurance.
+                                p We underwrite specialty program business both in house and in conjunction with select program administrators and managing general agencies. We have unique capabilities to design a program for an independent retail agent and work with them as distribution partners in defined territories. We also look to partner with program administrators and managing general agencies that have unique specialty expertise in defined industry segments, and that want to share in the underwriting risk on the program. Our appetites range from $5 million to $25 million in annual premium.
+
+    ='\n'
+
+
+    //blank section
+    section.section-sm-top-90
+
+    //- Page Footer
+    include ../sections/_section-footer-default
