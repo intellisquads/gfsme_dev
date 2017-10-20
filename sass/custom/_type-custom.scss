@@ -517,6 +517,12 @@ address {
   }
 }
 
+.bg-image-md-hide {
+  @media (max-width: $screen-md-min - 1 ) {
+    background-image: none !important;
+  }
+}
+
 .bg-image.bg-gray-dark {
   .quote-vertical.quote-vertical-inverse .quote-open > svg {
     fill: $white !important;

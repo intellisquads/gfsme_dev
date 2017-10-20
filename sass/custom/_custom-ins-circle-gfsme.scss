@@ -1,6 +1,6 @@
 .all_service_tab .circleTab {
   display: inline-block;
-  font-size: 13px;
+  font-size: 12px;
   cursor: pointer;
   margin: 20px ;
   width: 130px;
@@ -86,7 +86,7 @@
 }
 
 .circleTab.v3car {
-  background: #776fce;
+  background: $cl_motor;
 }
 .circleTab.v3car:before {
   content: " ";
@@ -107,7 +107,7 @@
   background-position: -6px 5px;
 }
 .circleTab.v3term {
-  background: #505c8b;
+  background: $cl_life;
 }
 .circleTab.v3term:before {
   content: " ";
@@ -128,7 +128,7 @@
   background-position: 4px -46px;
 }
 .circleTab.v3health {
-  background: #42ceb2;
+  background: $cl_health;
 }
 .circleTab.v3health:before {
   content: " ";
@@ -149,7 +149,7 @@
   background-position: -3px -100px;
 }
 .circleTab.v3investment {
-  background: #496fbc;
+  background: $cl_savings;
 }
 .circleTab.v3investment:before {
   content: " ";
@@ -170,7 +170,7 @@
   background-position: 1px -154px;
 }
 .circleTab.v3travel {
-  background: #e6a65a;
+  background: $cl_travel;
 }
 .circleTab.v3travel:before {
   content: " ";
@@ -247,7 +247,7 @@
   background-position: -923px -509px;
 }
 .circleTab.v3retirement {
-  background: #486bb8;
+  background: $cl_retirement;
 }
 .circleTab.v3retirement:before {
   content: " ";
@@ -289,7 +289,7 @@
   background-position: -925px -412px;
 }
 .circleTab.v3home {
-  background: #d17447;
+  background: $cl_home;
 }
 .circleTab.v3home:before {
   content: " ";
@@ -310,7 +310,7 @@
   background-position: -673px -507px;
 }
 .circleTab.v3child {
-  background: #486fbc;
+  background: $cl_child;
 }
 .circleTab.v3child:before {
   content: " ";
@@ -427,7 +427,7 @@
   }
 
   .circleTab.v3car {
-    background: #776fce;
+    background: $cl_motor;
   }
   .circleTab.v3car:before {
     content: " ";
@@ -449,7 +449,7 @@
     background-position: -6px 5px;
   }
   .circleTab.v3term {
-    background: #505c8b;
+    background: $cl_life;
   }
   .circleTab.v3term:before {
     content: " ";
@@ -471,7 +471,7 @@
     background-position: 4px -48px;
   }
   .circleTab.v3health {
-    background: #42ceb2;
+    background: $cl_health;
   }
   .circleTab.v3health:before {
     content: " ";
@@ -493,7 +493,7 @@
     background-position: -1px -101px;
   }
   .circleTab.v3investment {
-    background: #496fbc;
+    background: $cl_savings;
   }
   .circleTab.v3investment:before {
     content: " ";
@@ -515,7 +515,7 @@
     background-position: 1px -156px;
   }
   .circleTab.v3travel {
-    background: #e6a65a;
+    background: $cl_travel;
   }
   .circleTab.v3travel:before {
     content: " ";
@@ -594,7 +594,7 @@
     background-position: -923px -507px;
   }
   .circleTab.v3retirement {
-    background: #486bb8;
+    background: $cl_retirement;
   }
   .circleTab.v3retirement:before {
     content: " ";
@@ -638,7 +638,7 @@
     background-position: -925px -418px;
   }
   .circleTab.v3home {
-    background: #d17447;
+    background: $cl_home;
   }
   .circleTab.v3home:before {
     content: " ";
@@ -660,7 +660,7 @@
     background-position: -674px -510px;
   }
   .circleTab.v3child {
-    background: #486fbc;
+    background: $cl_child;
   }
   .circleTab.v3child:before {
     content: " ";

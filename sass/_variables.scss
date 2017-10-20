@@ -67,6 +67,17 @@ $gallery:         #ededed;
 $whisper:         #f6f7fa;
 $whisper-1:       #f2f3f8;
 
+//Home Circle Icons - Color Pallette - GFSME
+$cl_life: #505c8b;
+$cl_savings: #4b76c2;
+$cl_retirement: #d9679c;
+$cl_child: #de6d75;
+$cl_health: #42ceb2;
+$cl_motor: #d17447;
+$cl_home: #776fce;
+$cl_travel: #e6a65a;
+
+
 $secondary: $dusty-gray;
 
 //== Scaffolding
@@ -116,7 +127,7 @@ $layout-boxed-width:      1920px;
 
 
 // Base FZ & LH (w/o units)
-$base-text-size:          17;
+$base-text-size:          15;
 $base-lh-size:            24;
 
 $base-vm-size:            (($base-text-size*100)/$template-width)*1vw;
