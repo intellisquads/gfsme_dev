@@ -1,0 +1,12 @@
+start /b jade about-us.jade -o ../../ --pretty
+start /b jade contacts-us.jade -o ../../ --pretty
+start /b jade employee-benefits.jade -o ../../ --pretty
+start /b jade engineering.jade -o ../../ --pretty
+start /b jade liabilities.jade -o ../../ --pretty
+start /b jade life-personal.jade -o ../../ --pretty
+start /b jade login.jade -o ../../ --pretty
+start /b jade index.jade -o ../../ --pretty
+start /b jade marine-cargo-aviation.jade -o ../../ --pretty
+start /b jade medical.jade -o ../../ --pretty
+start /b jade motor-fleet.jade -o ../../ --pretty
+start /b jade property-energy.jade -o ../../ --pretty

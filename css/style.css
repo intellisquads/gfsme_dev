@@ -8830,6 +8830,9 @@ address {
 .text-ubold {
   font-weight: 900; }
 
+.text-footer-small {
+  font-size: 14px; }
+
 .text-spacing--30 {
   letter-spacing: -0.03em; }
 
