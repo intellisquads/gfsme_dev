@@ -28327,10 +28327,20 @@ dt {
 /*box-shadow: 0px 2px 4px rgba(10, 11, 11, 0.2) !important;*/
 /*}*/
 /*}*/
+@media screen and (max-width: 800px) {
+  .all_service_tab {
+    margin: 0px auto 0px;
+    /*width: 555px;*/
+    text-align: center; }
+
+  .all_service_tab_title_box {
+    width: 100%;
+    text-align: center; } }
 @media screen and (max-width: 640px) {
   .all_service_tab {
     margin: 0px auto 0px;
-    /*width: 555px;*/ }
+    /*width: 555px;*/
+    text-align: center; }
 
   .all_service_tab .circleTab {
     font-size: 11px;
@@ -28357,8 +28367,7 @@ dt {
     margin: 10px 6px; }
 
   .all_service_tab .circleTab {
-    float: left;
-    display: block; }
+    display: inline-block; }
 
   .all_service_tab .circleTab::before {
     line-height: 65px; }
@@ -28624,7 +28633,8 @@ dt {
     background-position: -536px -508px; }
 
   .all_service_tab_title_box {
-    width: 385px; } }
+    width: 100%;
+    text-align: center; } }
 @-webkit-keyframes sonarEffect {
   0% {
     opacity: 0.3; }
