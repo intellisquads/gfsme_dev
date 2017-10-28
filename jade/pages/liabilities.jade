@@ -1,6 +1,7 @@
 extends  ../_skeleton
 
 //- Includes
+include  ../elements/_ui-insurance-content-gfsme.jade
 
 block variables
     - var activeIndex = 1
@@ -60,9 +61,26 @@ block page
                                 p Our agency can provide you and your family with quality insurance for your personal, business and financial needs. Our knowledgeable agents can help your find affordable and reliable car insurance, home insurance, commercial insurance or life insurance. The staff truly believes, “It’s all about protecting you!” Our mission is to help protect people in our communities from the financial impact of lawsuits, fires, car accidents and other unexpected incidents. Our focus is to help our clients grow their assets.
                                 p We believe in being local and we strive to improve the communities where we live and work. We offer an inclusive selection of products and client-focused service to go beyond meeting your needs and instead, exceeding your expectations! Our team of professionals is experienced and prepared to customize your policies to fit your situation and lifestyle.
 
+                                //- Burglary Insurance
                             div#tabs-2-2.tab-pane.fade
-                                p We underwrite specialty lines insurance on an admitted basis through AllRisk Insurance Company, Stonewood Insurance Company, and Falls Lake General Insurance Company. As the admitted insurance platform of James River Group and as subsidiaries of James River Group Holdings, Ltd., we operate against a capital base of almost $500 million.
-                                p As with our affiliates, James River Insurance Company (excess and surplus lines) and JRG Re (Bermuda based reinsurer), we focus on underwriting specialty insurance products through limited distribution partners focused in our desired industry segments. We prefer to write specialty insurance policies on a primary basis, and combine an experienced, common sense approach to the business with rigorous underwriting and claims management and an entrepreneurial culture. We believe that this combination results in success for both you and AllRisk.
+
+                                +insurance-section( {
+                                    id: 'ins-burglary',
+                                    image: 'insurance-burglary-356x250.jpg',
+                                    brief_descr: 'A burglary at your business premises results in consequential financial losses, large or small. This insurance covers damage to property, loss of stock/goods, as well as any cash or valuables kept in a locked safe. This will not only provide you with the most comprehensive cover, but will also advise you on how to prevent a burglary from happening in the first place through tailored risk assessment.As per the financial defenition Burglary Insurance is an insurance policy covering losses resulting from a burglary, which is the act of entering a building unlawfully with the intention of committing a crime, usually but not always theft. Burglary insurance for businesses is usually part of a larger policy. It ordinarily requires relatively high coinsurance, in the range of 40% to 80%.',
+                                    covers: 'Burglary and/or Housebreaking Policy covers property contained in your premises, stocks/goods owned by you or held in trust and/or commission. It also covers cash, valuables, securities kept in a locked safe or cash box in locked steel cupboard on specific request.                 The policy covers the property against loss/damage by burglary/house breaking. It also covers damage to your premises caused by burglars during burglary or attempts at burglary. The Policy pays actual loss/damage to your insured property caused by burglary/house breaking subject to the limit of Sum Insured. If Sum Insured is not adequate, Policy pays only proportionate loss. There is also a provision in the Policy to cover bulk items on ‘first loss’ basis wherein a percentage of total stock stored can be taken as that exposed to the risk of burglary and housebreaking. The premium is charged on this percentage selected only.',
+                                    extentions: 'The Policy can be extended on additional payment of premium to cover Riot, Strike, Malicious Damage and Theft. Further, policies can be issued on declaration basis and on floater basis for stocks.\n',
+                                    exclusions:'The Policy will not pay for loss/damage',
+                                    exlusions_list:[
+                                                        "To goods held in trust/commission, jewelry, curios, title deeds, business books unless specifically insured.\n" ,
+                                                        "Recoverable under Fire/Plate glass insurance policy\n" ,
+                                                        "By abstraction from a safe using a key or duplicate key, unless it is obtained by violence or threat\n" ,
+                                                        "Due to shop lifting, acts involving you/your family members/ your employees\n" ,
+                                                        "Due to War perils, Riot & Strike (covered by payment of additional premium), Acts of God, Nuclear perils"
+                                                     ],
+                                    period: "Period of insurance means the period of time stated in the schedule that this policy is in force.",
+                                    notes: 'The details furnished above are only a summary of product features and do not describe the entire terms, conditions and exclusions on the Policy. For further details or clarifications on the Policy contact Global Insurance Brokers Company LLC. We shall be pleased to furnish further details.'
+                                } )
 
                             div#tabs-2-3.tab-pane.fade
                                 p We believe in More Better, and we work each day to ensure that our culture is embodied in our actions. We believe that it is OK to expect more from ourselves each and every day, in each and every activity and action. Equally, we believe it is OK to expect more from others in their actions and interactions with us. By focusing on achieving success in each and every action and interaction, we believe we both win.

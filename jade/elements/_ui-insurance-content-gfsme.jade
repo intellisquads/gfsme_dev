@@ -1,0 +1,110 @@
+//- Include
+//include ../elements/_ui-quote-minimal
+
+//- Includes
+include ../elements/_ui-panel-gfsme
+
+//- RD Parallax
+mixin insurance-section(obj)
+
+  .shell
+    .range
+
+      .cell-sm-12
+        img(src='images/' + obj.image , alt='', width='100%', height='100%', class='section-sm-30')
+
+      .cell-sm-12
+        #InsuranceDetails.panel-group.panel-group-custom.panel-group-light(role='tablist', aria-multiselectable='true')
+          +panel({
+              id: obj.id,
+              first: true,
+              panelClass: 'panel-light',
+              parentId: 'InsuranceDetails',
+              number: '1',
+              header: 'Brief Description',
+              text: obj.brief_descr
+          })
+
+      .cell-sm-12
+        if (typeof(obj.covers) !== 'undefined' ||  typeof(obj.covers_list) !== 'undefined' )
+          +panel({
+              id: obj.id,
+              first: true,
+              panelClass: 'panel-light',
+              parentId: 'InsuranceDetails',
+              number: '2',
+              header: 'What It Covers ?',
+              text: obj.covers,
+              list: obj.covers_list,
+              footer: obj.covers_footer
+          })
+
+      .cell-sm-12
+        if (typeof(obj.extentions) !== 'undefined')
+          +panel({
+              id: obj.id,
+              panelClass: 'panel-light',
+              parentId: 'InsuranceDetails',
+              number: '3',
+              header: 'Possible Extensions',
+              text: obj.extentions
+          })
+
+      .cell-sm-12
+        if (typeof(obj.exlusions) !== 'undefined' ||  typeof(obj.exlusions_list) !== 'undefined' )
+          +panel({
+              id: obj.id,
+              panelClass: 'panel-light',
+              parentId: 'InsuranceDetails',
+              number: '4',
+              header: 'Normal Exlusions',
+              text: obj.exclusions,
+              list: obj.exlusions_list
+          })
+
+      .cell-sm-12
+        if (typeof(obj.period_start) !== 'undefined' ||  typeof(obj.period) !== 'undefined' )
+          +panel({
+              id: obj.id,
+              panelClass: 'panel-light',
+              parentId: 'InsuranceDetails',
+              number: '5',
+              header: 'Period Of Insurance',
+              text: obj.period,
+              period_start: obj.period_start,
+              period_end: obj.period_end
+          })
+
+      .cell-sm-12
+        if (typeof(obj.sum_insured) !== 'undefined')
+          +panel({
+              id: obj.id,
+              panelClass: 'panel-light',
+              parentId: 'InsuranceDetails',
+              number: '6',
+              header: 'Sum Insured',
+              text: obj.sum_insured
+          })
+
+      .cell-sm-12
+        if (typeof(obj.benefits) !== 'undefined')
+          +panel({
+              id: obj.id,
+              panelClass: 'panel-light',
+              parentId: 'InsuranceDetails',
+              number: '7',
+              header: 'Key Benefits',
+              benefits: obj.benefits
+          })
+
+      .cell-sm-12
+        if (typeof(obj.notes) !== 'undefined')
+          +panel({
+              id: obj.id,
+              panelClass: 'panel-light',
+              parentId: 'InsuranceDetails',
+              number: '8',
+              header: 'Notes',
+              text: obj.notes
+          })
+

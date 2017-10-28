@@ -1,6 +1,7 @@
 extends  ../_skeleton
 
 //- Includes
+include  ../elements/_ui-insurance-content-gfsme.jade
 
 block variables
     - var activeIndex = 1
@@ -42,15 +43,80 @@ block page
 
                         //- Tab panes
                         .tab-content.text-secondary
+                            // - Contractors All Risk Insurance (CAR)
                             div#tabs-2-1.tab-pane.fade.in.active
-                                p
-                                    img(src='images/' + 'pic_worker-1-500x244.jpg', alt='', width='100%', height='100%', class='section-sm-30')
 
-                                p Our agency can provide you and your family with quality insurance for your personal, business and financial needs. Our knowledgeable agents can help your find affordable and reliable car insurance, home insurance, commercial insurance or life insurance. The staff truly believes, “It’s all about protecting you!” Our mission is to help protect people in our communities from the financial impact of lawsuits, fires, car accidents and other unexpected incidents. Our focus is to help our clients grow their assets.
-                                p We believe in being local and we strive to improve the communities where we live and work. We offer an inclusive selection of products and client-focused service to go beyond meeting your needs and instead, exceeding your expectations! Our team of professionals is experienced and prepared to customize your policies to fit your situation and lifestyle.
+                                    +insurance-section( {
+                                        id: 'ins-car',
+                                        image: 'insurance-contractor-500x244.jpg',
+                                        brief_descr: 'The contractor all risks policy is specially designed to cover for loss or damage to predominantly civil engineering construction projects ranging from small villa to construction of bridges or high rise.This is an “All Risk” policy covering various activities of construction (except specific exclusions as mentioned in the policy)\n' +
+                                                        'This policy can be taken out in the joint names of the contractor and the employer. This policy enables the Contractor or Employer to comply with the insurance requirements of the Contract\n' +
+                                                        'Cover can be extended to include constructional plant as part of the Contractor All Risks cover',
+                                        covers: 'Summary of cover\n',
+                                        covers_list : [
+                                                        'Section1 covers the risk of accidental physical loss or damage in respect of the contract works, during the execution of a civil project. CAR insurance provides an ‘all risk ‘cover. All perils are covered unless specifically excluded\n',
+                                                        'Section2 of the policy covers legal liability falling on the insured contractor as a result of bodily injury or property damage belonging to a third party.'
+                                                        ],
+                                        extentions: 'On request the policy can be extended to cover various optional extensions namely, Transit to or from the site (excluding sea or air transit), Maintenance cover, Removal of debris costs, Architects, Surveyors Fees for the reinstatement of damage, etc.​​​',
+                                        exlusions_list: [
+                                                            "War, Civil War, Political Risk\n",
+                                                            "Terrorism and Sabotage\n" ,
+                                                            "Nuclear reaction, nuclear radiation or radioactive contamination.\n",
+                                                            "Willful act or willful negligence of the insured or his representatives.\n",
+                                                            "Cessation of work whether total or partial.\n" ,
+                                                            "Losses within the compulsory access.\n",
+                                                            "Loss due to faulty design\n",
+                                                            "Wear and tear\n" ,
+                                                            "Loss or damage discovered at the time of taking an inventory.\n"
+                                                            ],
+                                        period_start: "The cover starts on the unloading of the first consignment at site or commencement of work and continues to be in force as stated in the policy. ",
+                                        period_end: "The policy ceases when the project is handed over to the principal or put into service.",
+                                        sum_insured: "This is usually represented by the full Contract project value (inclusive of transport charges, customs duties, etc.) and supplemented as necessary by the value of constructional plant.\n" +
+                                                     "On request the policy can be extended to cover various optional extensions viz. Transit to or from the site (excluding sea or air transit), Maintenance cover, Removal of debris costs, Architects, Surveyors Fees for the reinstatement of damage, etc",
+                                        benefits: [
+                                                        "Tailor-made product for the construction industry",
+                                                        "Cover on all risks basis",
+                                                        "Cover legal liabilities to third parties arising out of the performance of the contract",
+                                                        "Specialized team of Engineers available to help in implementation of risk management measures",
+                                                        "Dedicated team of Claims specialists",
+                                                        "Presence across the length and breadth of GCC",
+                                                        "It is also possible to have an annual policy issued for all work undertaken by a contractor"
+                                                    ]
+                                    } )
+
+                            // - Contractors Plant & <br> Machinery Insurance (CPM)
                             div#tabs-2-2.tab-pane.fade
-                                p We underwrite specialty lines insurance on an admitted basis through AllRisk Insurance Company, Stonewood Insurance Company, and Falls Lake General Insurance Company. As the admitted insurance platform of James River Group and as subsidiaries of James River Group Holdings, Ltd., we operate against a capital base of almost $500 million.
-                                p As with our affiliates, James River Insurance Company (excess and surplus lines) and JRG Re (Bermuda based reinsurer), we focus on underwriting specialty insurance products through limited distribution partners focused in our desired industry segments. We prefer to write specialty insurance policies on a primary basis, and combine an experienced, common sense approach to the business with rigorous underwriting and claims management and an entrepreneurial culture. We believe that this combination results in success for both you and AllRisk.
+                                +insurance-section( {
+                                    id: 'ins-cpm',
+                                    image: 'insurance_machinery-407x250.jpg',
+                                    brief_descr: 'CPM Insurance is to provide a cover on annual basis to a contractor who may be using his plant and machinery at different projects during the course of the year of the cover is not limited to a specific project site.\n' +
+                                                    'It is operative at all the sites wherever the plant and machinery is in use.\n' +
+                                                    'The insurers have to be informed of the sites where the insured items are being used.\n',
+                                    covers: 'The Policy coverage includes any unforeseen and sudden physical loss or damage to the Insured items due to any cause including:',
+                                    covers_list: [
+                                                    "Burglary, theft, riot, strike and malicious damage. \n",
+                                                    "Fire and lightning, External explosion, Earth Quake, Flood, Subsidence, Inundation, Landslide and Rockslide \n",
+                                                    "Storm, tempest, hurricane, tempest, typhoon and tornado \n",
+                                                    "Accidental damage while at work due to faulty man handling, dropping or falling or collapse, collision and impact."
+                                                ],
+                                    covers_footer: 'The Insured shall be indemnified for any loss or damage to the insured item while it is being used/installed at the site against unforeseen and sudden physical damage to the machinery by any cause provided the same is not specifically excluded under the Policy.',
+                                    extentions: 'On request the policy can be extended to cover various optional extensions namely, Third Pary Liability, Escalations, Air Frieght, Additional Custom Duty, Owners Sorrounding Property , Express Frieght, Holiday Rates,  overtime wages and cost incurred in the clearence and removal of debris',
+                                    exclusions:'The policy shall not cover loss or damage due to the following: ',
+                                    exlusions_list: [
+                                                        "Electronic or Mechanical Breakdown failure or breakage without the operation of any external peril. \n",
+                                                        "Loss or damage to replaceable parts which have limited life such as bits, knives, ropes, belts, chains etc. etc. \n",
+                                                        "Loss or damage due to explosion of any boiler or pressure vessel. \n",
+                                                        "Loss or damage to any water borne vessel and crafts, sinking or damage by sea waters or tides. \n",
+                                                        "Loss or damage sustained during the transit from one location to another. \n",
+                                                        "Loss or damage due to wear, tear, collisions and depreciation. \n",
+                                                        "War and war-like situations including nuclear risks.\n",
+                                                        "Willful Negligence",
+                                                        "Wear and Tear",
+                                                        "Transit from one location to another"
+                                                    ]
+                                } )
+
+                            // - Delay in Startup Insurance
                             div#tabs-2-3.tab-pane.fade
                                 p We believe in More Better, and we work each day to ensure that our culture is embodied in our actions. We believe that it is OK to expect more from ourselves each and every day, in each and every activity and action. Equally, we believe it is OK to expect more from others in their actions and interactions with us. By focusing on achieving success in each and every action and interaction, we believe we both win.
                                 p You get a more responsive, creative, financially sound, insurer that takes the time to understand your opportunities. We get an engaged and knowledgeable distribution source for our business, one that trusts that we will work for our mutual success in everything that we do. You and your clients deserve it. More. Better.

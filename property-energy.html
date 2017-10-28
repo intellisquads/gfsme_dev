@@ -58,6 +58,19 @@
                     </div>
                   </div>
                 </div>
+                <div class="rd-navbar-search">
+                  <form action="search-results.html" method="GET" data-search-live="rd-search-results-live" data-search-live-count="6" class="rd-search">
+                    <div class="rd-search-inner">
+                      <div class="form-group">
+                        <label for="rd-search-form-input" class="form-label">Search...</label>
+                        <input id="rd-search-form-input" type="text" name="s" autocomplete="off" class="form-control">
+                      </div>
+                      <button type="submit" class="rd-search-submit"></button>
+                    </div>
+                    <div id="rd-search-results-live" class="rd-search-results-live"></div>
+                  </form>
+                  <button data-rd-navbar-toggle=".rd-navbar-search, .rd-navbar-search-wrap" class="rd-navbar-search-toggle"></button>
+                </div>
               </div>
               <div class="rd-navbar-group">
                 <div class="rd-navbar-panel">

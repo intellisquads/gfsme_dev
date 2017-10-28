@@ -10,3 +10,4 @@ start /b jade marine-cargo-aviation.jade -o ../../ --pretty
 start /b jade medical.jade -o ../../ --pretty
 start /b jade motor-fleet.jade -o ../../ --pretty
 start /b jade property-energy.jade -o ../../ --pretty
+start /b jade search-results.jade -o ../../ --pretty

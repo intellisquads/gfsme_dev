@@ -1,0 +1,72 @@
+mixin panel(obj)
+  - var headingId = id=obj.parentId + obj.id + 'Heading' + obj.number
+  - var bodyId = id=obj.parentId + obj.id + 'Collapse' + obj.number
+
+  //- Bootstrap panel
+              //------------ Plain Text --------------//
+  .panel.panel-custom(class=obj.panelClass)
+    .panel-heading(id=headingId, role='tab')
+      .panel-title
+        if(obj.first)
+          a(role='button', data-toggle='collapse', data-parent='#' + obj.parentId, href='#' + bodyId, aria-controls=bodyId, aria-expanded='true')
+            h4=obj.header
+            .panel-arrow
+        else
+          a.collapsed(role='button', data-toggle='collapse', data-parent='#'+ obj.parentId, href='#' + bodyId, aria-controls=bodyId)
+            h4=obj.header
+            .panel-arrow
+
+              //------------ Lists --------------//
+    .panel-collapse.collapse(id=bodyId, class={'in' : obj.first}, role='tabpanel', aria-labelledby=headingId)
+      .panel-body.text-dark
+        if (typeof(obj.text) === 'undefined')
+          !=obj.content
+        else
+          p.text-dark=obj.text
+
+        if (typeof(obj.list) === 'undefined')
+          !=obj.content
+        else
+          ul.list-numbered
+            each list_item in obj.list
+              li.text-dark=list_item
+
+              //------------ Period Start & End --------------//
+        .shell
+          .range
+            if (typeof(obj.period_start) === 'undefined')
+              !=obj.content
+            else
+              .cell-md-6
+                .unit.unit-horizontal.unit-spacing-sm
+                  .unit-left
+                    span.icon.icon-primary.icon-md(class="fa-sign-in")
+                  .unit-body
+                    h5 Period Start
+                    span.text-dark=obj.period_start
+
+            if (typeof(obj.period_end) === 'undefined')
+              !=obj.content
+            else
+              .cell-md-6
+                .unit.unit-horizontal.unit-spacing-sm
+                  .unit-left
+                    span.icon.icon-primary.icon-md(class="fa-sign-out")
+                  .unit-body
+                    h5 Period End
+                    span.text-dark=obj.period_end
+
+              //------------ Benefits --------------//
+
+            if (typeof(obj.benefits) === 'undefined')
+              !=obj.content
+            else
+              ul.list-marked
+                each benefit in obj.benefits
+                  li.text-dark=benefit
+
+
+            if (typeof(obj.footer) === 'undefined')
+              !=obj.content
+            else
+              p.text-dark=obj.footer
