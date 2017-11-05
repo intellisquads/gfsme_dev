@@ -1,0 +1,33 @@
+extends  ../_skeleton
+
+//- Includes
+
+block variables
+    - var activeIndex = 1
+    - var pageName = 'Life & Critical Insurance'
+
+block title
+    title=pageName
+
+block page
+    //- Page Header
+    include ../sections/_section-header-default
+
+
+
+    +page-title(pageName, 'bg-life-critical')
+
+    section.section-50.bg-whisper-1.section-md-75.section-md-90.section-lg-100
+        .shell
+            .range.range-md-middle(style='justify-content:center')
+                .cell-md-6.text-center
+                    h3 Life & Critical Illness Insurance
+                    p Please checkout a short video below on "Life & Critical Illness"
+                    br
+                    .video-wrap
+                        figure
+                            img.img-responsive(src="images/insurance-video-life_insurance-571x378.png", width="571", height="378", alt="")
+                        a.link-circle.link-black(data-lightbox='iframe', class="embed-responsive-item" , href='play-life_insurance.html'): span.icon.icon-xl.fl-36-slim-icons-play90
+
+    //- Page Footer
+    include ../sections/_section-footer-default
