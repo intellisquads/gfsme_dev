@@ -11,7 +11,14 @@ mixin insurance-section(obj)
     .range
 
       .cell-sm-12
-        img(src='images/' + obj.image , alt='', width='100%', height='100%', class='section-sm-30')
+        img(src='images/' + obj.image , alt='', width='100%', height='100%', class='section-sm-15')
+
+        .cell-sm-12.text-center
+            .section-sm-30
+                if (typeof(obj.header) === 'undefined')
+                    !=obj.content
+                else
+                    h3!=obj.header
 
       .cell-sm-12
         #InsuranceDetails.panel-group.panel-group-custom.panel-group-light(role='tablist', aria-multiselectable='true')

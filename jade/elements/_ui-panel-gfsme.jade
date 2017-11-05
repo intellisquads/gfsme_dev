@@ -22,14 +22,14 @@ mixin panel(obj)
         if (typeof(obj.text) === 'undefined')
           !=obj.content
         else
-          p.text-dark=obj.text
+          p.text-dark!=obj.text
 
         if (typeof(obj.list) === 'undefined')
           !=obj.content
         else
           ul.list-numbered
             each list_item in obj.list
-              li.text-dark=list_item
+              li.text-dark!=list_item
 
               //------------ Period Start & End --------------//
         .shell
@@ -43,7 +43,7 @@ mixin panel(obj)
                     span.icon.icon-primary.icon-md(class="fa-sign-in")
                   .unit-body
                     h5 Period Start
-                    span.text-dark=obj.period_start
+                    span.text-dark!=obj.period_start
 
             if (typeof(obj.period_end) === 'undefined')
               !=obj.content
@@ -54,7 +54,7 @@ mixin panel(obj)
                     span.icon.icon-primary.icon-md(class="fa-sign-out")
                   .unit-body
                     h5 Period End
-                    span.text-dark=obj.period_end
+                    span.text-dark!=obj.period_end
 
               //------------ Benefits --------------//
 
@@ -63,10 +63,10 @@ mixin panel(obj)
             else
               ul.list-marked
                 each benefit in obj.benefits
-                  li.text-dark=benefit
+                  li.text-dark!=benefit
 
 
             if (typeof(obj.footer) === 'undefined')
               !=obj.content
             else
-              p.text-dark=obj.footer
+              p.text-dark!=obj.footer
